@@ -6,7 +6,8 @@ public class SingleMusicBlock : MonoBehaviour
 {
     public int speed = 4;
     Rigidbody2D myRigidbody;
-
+    public GameObject spawnObject;
+    
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -17,4 +18,6 @@ public class SingleMusicBlock : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+
 }
