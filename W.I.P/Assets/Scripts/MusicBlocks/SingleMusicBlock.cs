@@ -7,7 +7,6 @@ public class SingleMusicBlock : MonoBehaviour
     public int speed = 4;
     Rigidbody2D myRigidbody;
     public GameObject spawnObject;
-    
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -17,6 +16,11 @@ public class SingleMusicBlock : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         Destroy(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        Instantiate(spawnObject, transform.position, Quaternion.identity);
     }
 
 
