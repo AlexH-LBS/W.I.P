@@ -13,14 +13,54 @@ public class dialogueScriptTest01 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int choice=Dialogue("Helllo", "hi", "Greetings", "eh");
-        print(choice);
+        //string choice=Dialogue("hi", "Greetings", "eh");
+        //print(choice);
     }
 
-    int Dialogue(string Statement, string Answer0, string Answer1, string Answer2)
+    //change from void to string later
+    void Dialogue(string Answer0, string Answer1, string Answer2)
     {
-        return 1;
-        //WaitUntil choiceMade = true;
+        
+        int choice=0;
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            choice += 1;
+            print(choice);
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            choice -= 1;
+            print(choice);
+        }
+        if (choice >= 3)
+        {
+            choice = 0;
+            print(choice);
+        }
+        if (choice <= 0)
+        {
+            choice = 3;
+            print(choice);
+        }
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            if (choice == 0)
+            {
+                //return Answer0;
+            }
+            if (choice == 1)
+            {
+                //return Answer1;
+            }
+            if (choice == 0)
+            {
+                //return Answer2;
+            }
+
+
+            
+        }
+        
         
     }
 }
