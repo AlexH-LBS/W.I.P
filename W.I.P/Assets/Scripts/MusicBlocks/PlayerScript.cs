@@ -49,6 +49,7 @@ public class PlayerScript : MonoBehaviour
         if (interaction){
             score += 1;
             print("YOU SCORE");
+            //I added so that the hitmusic is mulitplied by 1%, probably doesnt work but you get roughly the point. is it possible to make the score and fame/hitmusic the same so we write less code and variables?
             Popularity.fame(1);
             text.text = score.ToString();
             Destroy(collision.gameObject);

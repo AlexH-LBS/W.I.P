@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Popularity : MonoBehaviour
+public class cameraFollow : MonoBehaviour
 {
+    public GameObject Target;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,10 +14,6 @@ public class Popularity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    public void fame(float HitMusic)
-    {
-        HitMusic *= 1.01f;
+        transform.position = Target.transform.position + new Vector3(0, 0, -10);
     }
 }
