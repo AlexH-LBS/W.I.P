@@ -111,14 +111,15 @@ public class PlayerScript : MonoBehaviour
 
         //score long block
         if (interaction && longBlockScore && longBlock){
-            score += 4;
+            score += 2;
             print("YOU SCORE LONG");
             Popularity.fame(2);
             text.text = score.ToString();
+            longBlockScore = false;
         }
         touching = false;
         longBlock = false;
-    }
+        }
 
 
     
