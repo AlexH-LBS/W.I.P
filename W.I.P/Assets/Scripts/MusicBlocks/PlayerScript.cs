@@ -39,7 +39,7 @@ public class PlayerScript : MonoBehaviour
             }
         }
         if (Input.GetKeyUp(input)) {
-            interaction = false;
+            StartCoroutine(InteractedAtMoment());
         }
         //if player pressed when not touching it say miss
         if (Input.GetKeyDown(input) && !touching)
@@ -52,8 +52,10 @@ public class PlayerScript : MonoBehaviour
     IEnumerator InteractedAtMoment()
     {
         interaction = true;
+        longBlockScore = true;
         yield return new WaitForSecondsRealtime(0.05f);
         interaction = false;
+        longBlockScore = false;
 
     }
     IEnumerator LongBlockInteraction(Collider2D collision)
@@ -86,7 +88,6 @@ public class PlayerScript : MonoBehaviour
             }
             if (interaction && longBlock) {
                 lastMove.text = "Hiting Long";
-                longBlockScore = true;
             }
             //if you miss the long block 
             if (!interaction && longBlock) {
@@ -107,19 +108,18 @@ public class PlayerScript : MonoBehaviour
         //when collsion ends touching ends
         private void OnTriggerExit2D(Collider2D collision)
         {
-            touching = false;
-            longBlock = false;
+
         //score long block
-        if (longBlockScore){
+        if (interaction && longBlockScore && longBlock){
             score += 4;
             print("YOU SCORE LONG");
             Popularity.fame(2);
             text.text = score.ToString();
         }
-        if (interaction && longBlock) {
-                lastMove.text = "Hit end long";
-            }
-        }
+        touching = false;
+        longBlock = false;
+    }
+
 
     
 }
