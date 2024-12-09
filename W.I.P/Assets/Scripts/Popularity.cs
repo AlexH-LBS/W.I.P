@@ -16,7 +16,7 @@ public class Popularity : MonoBehaviour
     {
         
     }
-    public void fame(float HitMusic)
+    public void fame(float HitMusic, float missedMusic)
     {
         fameInt += HitMusic;
         fameInt *= 1.01f;

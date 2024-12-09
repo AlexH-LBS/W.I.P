@@ -6,12 +6,14 @@ public class SingleMusicBlock : MonoBehaviour
 {
     public int speed = 4;
     Rigidbody2D myRigidbody;
+    public Popularity popularity;
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
         myRigidbody.velocity = new Vector2(0, -speed);
 
     }
     private void OnTriggerExit2D(Collider2D collision){
+        popularity.fame(0, -1);
         Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collision){
@@ -34,7 +36,7 @@ public class SingleMusicBlock : MonoBehaviour
     }
 
     private void OnDestroy(){
-
+        
     }
 
 
