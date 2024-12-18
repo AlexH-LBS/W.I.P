@@ -8,6 +8,9 @@ public class BusMovement : MonoBehaviour
     // Start is called before the first frame update
 
     Rigidbody2D bus;
+    new Vector3 movementSpeed;
+    new Vector3 rotation;
+    
     void Start()
     {
         bus = GetComponent<Rigidbody2D>();
@@ -17,11 +20,13 @@ public class BusMovement : MonoBehaviour
     void Update()
     {
         bus.velocity = bus.velocity.normalized;
+
+        //bus.velocity = movementSpeed * rotation
         
         //temporary movement code
         if (Input.GetKey(KeyCode.W))
         {
-            bus.velocity = new Vector2(0, 1);
+            //bus.velocity = movementSpeed + (new Vector2(0, 1));
         }
         if (Input.GetKey(KeyCode.S))
         {
@@ -41,5 +46,10 @@ public class BusMovement : MonoBehaviour
             bus.velocity = new Vector2(0, 0);
         }
         
+    }
+
+    private void Rotate()
+    {
+
     }
 }
