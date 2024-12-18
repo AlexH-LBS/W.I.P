@@ -21,12 +21,12 @@ public class BusMovement : MonoBehaviour
     {
         bus.velocity = bus.velocity.normalized;
 
-        bus.velocity = movementSpeed * rotation
+        //bus.velocity = movementSpeed * rotation
         
         //temporary movement code
         if (Input.GetKey(KeyCode.W))
         {
-            bus.velocity = movementSpeed + (new Vector2(0, 1));
+            //bus.velocity = movementSpeed + (new Vector2(0, 1));
         }
         if (Input.GetKey(KeyCode.S))
         {
