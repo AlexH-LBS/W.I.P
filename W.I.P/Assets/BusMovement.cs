@@ -8,8 +8,9 @@ public class BusMovement : MonoBehaviour
     // Start is called before the first frame update
 
     Rigidbody2D bus;
-    new Vector3 movementSpeed;
-    new Vector3 rotation;
+    public float maxSpeed;
+    float currentMovementSpeed;
+    
     
     void Start()
     {
@@ -19,37 +20,33 @@ public class BusMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bus.velocity = bus.velocity.normalized;
-
-        //bus.velocity = movementSpeed * rotation
+        bus.velocity = transform.up*currentMovementSpeed;
         
-        //temporary movement code
+        
         if (Input.GetKey(KeyCode.W))
         {
-            //bus.velocity = movementSpeed + (new Vector2(0, 1));
+            currentMovementSpeed = maxSpeed;
         }
-        if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S))
         {
-            bus.velocity = new Vector2(0, -1);
+            currentMovementSpeed = -maxSpeed;
         }
-        if (Input.GetKey(KeyCode.A))
+        else
         {
-            transform.Rotate(0, 0, 1);
+            currentMovementSpeed = 0;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A)&&currentMovementSpeed!=0)
         {
-            transform.Rotate(0, 0, -1);
+            transform.Rotate(0, 0, 0.5f);
+        }
+        if (Input.GetKey(KeyCode.D) && currentMovementSpeed != 0)
+        {
+            transform.Rotate(0, 0, -0.5f);
         }
 
-        if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.D))
-        {
-            bus.velocity = new Vector2(0, 0);
-        }
+        
         
     }
 
-    private void Rotate()
-    {
-
-    }
+   
 }
