@@ -13,7 +13,6 @@ public class SingleMusicBlock : MonoBehaviour
 
     }
     private void OnTriggerExit2D(Collider2D collision){
-        popularity.fame(0, -1);
         Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collision){
