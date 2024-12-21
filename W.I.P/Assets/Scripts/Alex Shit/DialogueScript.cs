@@ -8,13 +8,7 @@ public class DialogueScript : MonoBehaviour
     public bool IsFirstStatement;
     public bool isPrefabActive;
 
-    public bool isOption1;
-    public GameObject option1Prefab;
-    public bool isOption2;
-    public GameObject option2Prefab;
-    public bool isOption3;
-    public GameObject option3prefab;
-    public bool leave;
+    public int choice;
     
 
     
@@ -42,24 +36,19 @@ public class DialogueScript : MonoBehaviour
             switch (DialogueOptions)
             {
                 case DialoguePossibleOptions.option1:
-                    isOption1 = true;
-                    isOption2 = false;
-                    isOption3 = false;
-                    leave = false;
+                    
                     break;
 
                 case DialoguePossibleOptions.option2:
-                    isOption2 = true;
+                   
 
                     break;
 
                 case DialoguePossibleOptions.option3:
-                    isOption3 = true;
 
                     break;
 
                 case DialoguePossibleOptions.leave:
-                    leave = true;
 
                     break;
 
