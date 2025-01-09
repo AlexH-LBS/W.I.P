@@ -72,6 +72,7 @@ public class PlayerScript : MonoBehaviour
             }
             longBlockScore = false;
             lastMove.text = "Missed Long";
+            Popularity.fame(-1, 0);
         }
         if (interaction){
             longBlockScore = true;
