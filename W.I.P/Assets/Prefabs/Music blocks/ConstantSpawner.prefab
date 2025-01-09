@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6851370765513882393}
   - component: {fileID: 1777455836588162216}
   m_Layer: 0
-  m_Name: shortLongBlockSpawner
+  m_Name: ConstantSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
-  Spawning: {fileID: 1594834742002885729, guid: 37054e0cd729e0848933e5385d8a85d6, type: 3}
-  BPM: 2
+  Spawning: {fileID: 7440454946514983216, guid: ce58d176bc9170340bec688204ea0a0d, type: 3}
+  BPM: 30
   BPS: 0
   timer: 0
