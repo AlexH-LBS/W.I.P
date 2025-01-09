@@ -27,16 +27,12 @@ public class Popularity : MonoBehaviour
 
     public void fame(float HitMusic, float missedMusic)
     {
+        crowdSpeed = fameInt;
         fameInt += HitMusic;
         fameInt *= 1.01f;
-        crowdSpeed = fameInt;
 
-        if (fameInt >= 1.0f && fameInt <= 2.0f)
-        {
-            crowdSpeed += 1;
-            print(crowdSpeed);
-        }
-        else if (fameInt >= 3.0f && fameInt <= 1000.0f)
+       
+        if (fameInt >= 0.0f && fameInt <= 1000.0f)
         {
             crowdSpeed *= increase;
             print(crowdSpeed);
