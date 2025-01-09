@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BusMovement : MonoBehaviour
@@ -8,8 +9,8 @@ public class BusMovement : MonoBehaviour
     // Start is called before the first frame update
 
     Rigidbody2D bus;
-    public float maxSpeed;
-    float currentMovementSpeed;
+    public float Speed;
+    
     
     
     void Start()
@@ -20,32 +21,36 @@ public class BusMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bus.velocity = transform.up*currentMovementSpeed;
         
         
         if (Input.GetKey(KeyCode.W))
         {
-            currentMovementSpeed = maxSpeed;
+            bus.velocity += new Vector2(0, Speed);
         }
-        else if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
-            currentMovementSpeed = -maxSpeed;
+            bus.velocity += new Vector2(0, -Speed);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            bus.velocity += new Vector2(-Speed,0);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            bus.velocity += new Vector2(Speed,0);
+        }
+        
+        if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        {
+            bus.velocity = new Vector2(0, 0);
         }
         else
         {
-            currentMovementSpeed = 0;
-        }
-        if (Input.GetKey(KeyCode.A)&&currentMovementSpeed!=0)
-        {
-            transform.Rotate(0, 0, 0.5f);
-        }
-        if (Input.GetKey(KeyCode.D) && currentMovementSpeed != 0)
-        {
-            transform.Rotate(0, 0, -0.5f);
+            bus.velocity = bus.velocity.normalized * Speed;
         }
 
-        
-        
+
+
     }
 
    
