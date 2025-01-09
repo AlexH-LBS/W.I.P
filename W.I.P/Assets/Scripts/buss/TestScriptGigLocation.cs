@@ -8,41 +8,41 @@ public class TestScriptGigLocation : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public bool isBusNearby;
+    public bool isPlayerNearby;
 
-    public GameObject gigPrompt;
+    public GameObject characterPrompt;
 
-    public int gigScene;
+    public int characterScene;
 
     void Start()
     {
-        gigPrompt.SetActive(false);
+        characterPrompt.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isBusNearby == true)
+        if (isPlayerNearby == true)
         {
 
-            gigPrompt.SetActive(true);
+            characterPrompt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene(gigScene);
+                SceneManager.LoadScene(characterScene);
             }
         }
         else
         {
-            gigPrompt.SetActive(false);
+            characterPrompt.SetActive(false);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isBusNearby = true;
+        isPlayerNearby = true;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isBusNearby = false;
+        isPlayerNearby = false;
     }
 }
