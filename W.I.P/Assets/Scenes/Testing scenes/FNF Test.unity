@@ -1258,6 +1258,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fameInt: 0
+  crowdSpeed: 0
+  increase: 1.05
 --- !u!4 &1148923089
 Transform:
   m_ObjectHideFlags: 0

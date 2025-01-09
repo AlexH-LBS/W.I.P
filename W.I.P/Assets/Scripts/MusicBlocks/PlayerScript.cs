@@ -46,6 +46,7 @@ public class PlayerScript : MonoBehaviour
         {
             print("missed " + gameObject.name);
             lastMove.text = "Miss";
+            Popularity.fame(-1, 0);
         }
     }
     //sets interaction to true then false after .05 seconds
