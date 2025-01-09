@@ -22,7 +22,11 @@ MonoBehaviour:
           or mobility across rugged terrain. This ability not only makes it more
           effective in combat but also gives it a futuristic look as it "kneels"
           before unleashing its powerful 155mm gun!
-        responses: []
+        responses:
+        - responseText: Close
+          nextNode:
+            dialogueText: 
+            responses: []
     - responseText: nuh uh
       nextNode:
         dialogueText: '>:c'
