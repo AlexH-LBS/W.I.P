@@ -405,5 +405,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayerNearby: 0
-  characterPrompt: {fileID: 0}
+  characterPrompt: {fileID: 1820544514681738592}
   characterScene: 0

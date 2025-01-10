@@ -10,13 +10,13 @@ public class TestScriptGigLocation : MonoBehaviour
 
     public bool isPlayerNearby;
 
-    public GameObject characterPrompt;
+    public GameObject Prompt;
 
-    public int characterScene;
+    public int loadScene;
 
     void Start()
     {
-        characterPrompt.SetActive(false);
+        Prompt.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,15 +25,16 @@ public class TestScriptGigLocation : MonoBehaviour
         if (isPlayerNearby == true)
         {
 
-            characterPrompt.SetActive(true);
+            Prompt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                SceneManager.LoadScene(characterScene);
+                //This happens if youre in range :>>>
+                SceneManager.LoadScene(loadScene);
             }
         }
         else
         {
-            characterPrompt.SetActive(false);
+            Prompt.SetActive(false);
         }
     }
 
