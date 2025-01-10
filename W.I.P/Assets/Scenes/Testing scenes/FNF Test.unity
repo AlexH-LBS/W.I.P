@@ -1193,7 +1193,7 @@ PrefabInstance:
       objectReference: {fileID: 7440454946514983216, guid: ce58d176bc9170340bec688204ea0a0d, type: 3}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: TimeInBetween.Array.size
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: TimeInBetween.Array.data[0]
@@ -1201,7 +1201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: TimeInBetween.Array.data[1]
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: TimeInBetween.Array.data[2]
@@ -1209,7 +1209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: TimeInBetween.Array.data[3]
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: TimeInBetween.Array.data[4]
@@ -1349,9 +1349,33 @@ PrefabInstance:
       value: Spawner W
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: BPM
+      value: 121
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: Spawning
       value: 
       objectReference: {fileID: 7440454946514983216, guid: ce58d176bc9170340bec688204ea0a0d, type: 3}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[0]
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[1]
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[2]
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[3]
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5009684730458369159, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -1878,9 +1902,29 @@ PrefabInstance:
       value: Spawner O
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: BPM
+      value: 121
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: Spawning
       value: 
       objectReference: {fileID: 7440454946514983216, guid: ce58d176bc9170340bec688204ea0a0d, type: 3}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[0]
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[1]
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[2]
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5009684730458369159, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -1944,9 +1988,33 @@ PrefabInstance:
       value: Spawner P
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: BPM
+      value: 121
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: Spawning
       value: 
       objectReference: {fileID: 7440454946514983216, guid: ce58d176bc9170340bec688204ea0a0d, type: 3}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[0]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
+      propertyPath: TimeInBetween.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5009684730458369159, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3
