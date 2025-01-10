@@ -41,6 +41,7 @@ public class Popularity : MonoBehaviour
         if(fameInt > 100)
         {
             fameInt = 99;
+            crowdSpeed = 100;
         }
 
 
