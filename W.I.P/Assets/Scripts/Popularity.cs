@@ -38,6 +38,11 @@ public class Popularity : MonoBehaviour
             print(crowdSpeed);
         }
 
+        if(fameInt > 100)
+        {
+            fameInt = 99;
+        }
+
 
     }
 }
