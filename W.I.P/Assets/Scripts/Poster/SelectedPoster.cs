@@ -1,5 +1,9 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class SelectedPoster : MonoBehaviour
@@ -9,8 +13,12 @@ public class SelectedPoster : MonoBehaviour
     [SerializeField] KeyCode down = KeyCode.S;
     [SerializeField] KeyCode back = KeyCode.A;
     [SerializeField] KeyCode forword = KeyCode.D;
+    [SerializeField] KeyCode selected = KeyCode.Space;
     //pos
     [SerializeField] private Transform[] points;
+    [SerializeField] public GameObject poster;
+    private bool movingToTarget = false;
+    private int witchOne;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,23 +31,59 @@ public class SelectedPoster : MonoBehaviour
     {
         if (Input.GetKeyDown(up))
         {
-            gameObject.transform.position = points[0].position;
+            movingToTarget = true;
+            witchOne = 0;
         }
         if (Input.GetKeyDown(down))
         {
-            gameObject.transform.position = points[1].position;
+            movingToTarget = true;
+            witchOne = 1;
         }
         if (Input.GetKeyDown(back))
         {
-            gameObject.transform.position = points[2].position;
+            movingToTarget = true;
+            witchOne = 2;
         }
         if (Input.GetKeyDown(forword))
         {
-            gameObject.transform.position = points[3].position;
+            movingToTarget = true;
+            witchOne = 3;
         }
+        if(movingToTarget)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, points[witchOne].position, 10 * Time.deltaTime);
+        }
+        if (Input.GetKeyDown(selected))
+        {
+            if(!poster.activeSelf)
+            {
+                poster.SetActive(true);
+            }
+            else
+            {
+                poster.SetActive(false);
+            }
+        }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        points = collision.gameObject.GetComponent<Poster>().points;
+        StartCoroutine(NewShit(collision));
     }
+
+    private IEnumerator NewShit(Collider2D collision)
+    {
+        yield return new WaitForSeconds(.25f);
+        points = collision.gameObject.GetComponent<Poster>().points;
+        poster = collision.gameObject.GetComponent<Poster>().poster;
+        movingToTarget = false;
+    }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        poster.SetActive(false);
+        poster = null;
+    }
+
 }
