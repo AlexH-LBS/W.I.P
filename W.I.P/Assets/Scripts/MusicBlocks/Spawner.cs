@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour
     //resets timer at start tho make the code simpler and reusable
     void Start()
     {
-        BPS = ((int)TimeInBetween[witchOne]);
+        BPS = ((float)TimeInBetween[witchOne]);
         BPS = BPM / 60;
         timer = 1 / BPS;
     }
@@ -25,11 +25,13 @@ public class Spawner : MonoBehaviour
         timer -= Time.deltaTime;
         if(timer < 0)
         {
-            BPS = ((int)TimeInBetween[witchOne]);
+            
+            BPS = ((float)TimeInBetween[witchOne]);
+            
             BPS = BPM / 60;
-            timer = 1 / BPS;
-            witchOne += 1;
+            timer = 1/BPS*(((float)TimeInBetween[witchOne]));
             Instantiate(Spawning, gameObject.transform.position, Quaternion.identity);
+            witchOne++;
         }
     }
 }
