@@ -15,8 +15,8 @@ public class SelectedPoster : MonoBehaviour
     [SerializeField] KeyCode forword = KeyCode.D;
     [SerializeField] KeyCode selected = KeyCode.Space;
     //pos
-    [SerializeField] private Transform[] points;
-    [SerializeField] public GameObject poster;
+    [SerializeField] private Transform[] points = null;
+    [SerializeField] public GameObject poster = null;
     private bool movingToTarget = false;
     private int witchOne;
     // Start is called before the first frame update

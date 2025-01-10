@@ -13,6 +13,7 @@ public class TestScriptGigLocation : MonoBehaviour
     public GameObject Prompt;
 
     public int loadScene;
+    [SerializeField] public KeyCode tpinput = KeyCode.Space;
 
     void Start()
     {
@@ -26,7 +27,7 @@ public class TestScriptGigLocation : MonoBehaviour
         {
 
             Prompt.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(tpinput))
             {
                 //This happens if youre in range :>>>
                 SceneManager.LoadScene(loadScene);
