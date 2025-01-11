@@ -9,16 +9,13 @@ public class Actor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SpeakTo();
+        DialogueManager.Instance.StartDialogue(name, Dialogue.RootNode);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         DialogueManager.Instance.HideDialogue();
     }
 
-    public void SpeakTo()
-    {
-        DialogueManager.Instance.StartDialogue(name, Dialogue.RootNode);
-    }
+
 
 }

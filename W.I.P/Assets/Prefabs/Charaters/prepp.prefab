@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 6905084734070949313}
   - component: {fileID: 3382446499749816968}
   - component: {fileID: 7495241339225610501}
-  - component: {fileID: 8244981373380044687}
+  - component: {fileID: 1454472682382213851}
   - component: {fileID: 6906843410632091187}
   - component: {fileID: 8930689612811261388}
   m_Layer: 0
   m_Name: prepp
-  m_TagString: Untagged
+  m_TagString: Prep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Prepp
   Dialogue: {fileID: 11400000, guid: 43fa66d36941b404399ac9b6a6843a42, type: 2}
---- !u!114 &8244981373380044687
+--- !u!114 &1454472682382213851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 429740255580062961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5f89a519b62d2e4fa3aa9e85ee7e21d, type: 3}
+  m_Script: {fileID: 11500000, guid: 161b9a8d1fa691247b3c35572337ebba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   romanceP: 0

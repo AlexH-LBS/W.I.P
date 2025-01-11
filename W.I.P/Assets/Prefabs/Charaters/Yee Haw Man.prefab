@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 6883310393886681605}
   - component: {fileID: 3018554277272405183}
   - component: {fileID: 2636575203481057080}
-  - component: {fileID: 2450531807823075953}
+  - component: {fileID: 5782704822940467283}
   - component: {fileID: 1147258236417993019}
   - component: {fileID: 3253900183184371644}
   m_Layer: 0
   m_Name: Yee Haw Man
-  m_TagString: Untagged
+  m_TagString: Cowboy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: YEE HAWWW
   Dialogue: {fileID: 11400000, guid: 43fa66d36941b404399ac9b6a6843a42, type: 2}
---- !u!114 &2450531807823075953
+--- !u!114 &5782704822940467283
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

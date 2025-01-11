@@ -8,6 +8,9 @@ TagManager:
   - LongMusicBlock
   - Close
   - Accept
+  - Pop
+  - Prep
+  - Cowboy
   layers:
   - Default
   - TransparentFX

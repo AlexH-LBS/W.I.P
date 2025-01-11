@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 3153545980008705055}
   - component: {fileID: 7049641474661339283}
   - component: {fileID: 2725661748506396954}
-  - component: {fileID: 205690521289949936}
+  - component: {fileID: 3828803576855939407}
   - component: {fileID: 5313419461626437165}
   - component: {fileID: 1511411789852982766}
   m_Layer: 0
   m_Name: Pop girly
-  m_TagString: Untagged
+  m_TagString: Pop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Pop girl
   Dialogue: {fileID: 11400000, guid: 43fa66d36941b404399ac9b6a6843a42, type: 2}
---- !u!114 &205690521289949936
+--- !u!114 &3828803576855939407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8671979576522409095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5f89a519b62d2e4fa3aa9e85ee7e21d, type: 3}
+  m_Script: {fileID: 11500000, guid: faccd6c825e8c27448152d279f6e7495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   romanceP: 0
