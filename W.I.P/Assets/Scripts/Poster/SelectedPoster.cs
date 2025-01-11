@@ -1,10 +1,6 @@
-using JetBrains.Annotations;
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SelectedPoster : MonoBehaviour
 {
@@ -19,6 +15,7 @@ public class SelectedPoster : MonoBehaviour
     [SerializeField] public GameObject poster = null;
     private bool movingToTarget = false;
     private int witchOne;
+    public int sceneLoad;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,7 +73,9 @@ public class SelectedPoster : MonoBehaviour
         yield return new WaitForSeconds(.25f);
         points = collision.gameObject.GetComponent<Poster>().points;
         poster = collision.gameObject.GetComponent<Poster>().poster;
+        sceneLoad = collision.gameObject.GetComponent<Poster>().loadScene;
         movingToTarget = false;
+        
     }
 
 
@@ -84,6 +83,10 @@ public class SelectedPoster : MonoBehaviour
     {
         poster.SetActive(false);
         poster = null;
+    }
+    public void playgame()
+    {
+        SceneManager.LoadScene(sceneLoad);
     }
 
 }

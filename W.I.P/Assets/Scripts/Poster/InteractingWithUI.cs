@@ -1,13 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class InteractingWithUI : MonoBehaviour
 {
-    public int scene;
+    public int selectedPoster;
     public void playgame()
     {
-        SceneManager.LoadScene(scene);
+        selectedPoster = GetComponent<SelectedPoster>().sceneLoad;
+        SceneManager.LoadScene(selectedPoster);
     }
 }
