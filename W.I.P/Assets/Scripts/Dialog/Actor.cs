@@ -7,16 +7,18 @@ public class Actor : MonoBehaviour
     public string Name;
     public Dialogue Dialogue;
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SpeakTo();
-        }
+        SpeakTo();
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        DialogueManager.Instance.HideDialogue();
     }
 
     public void SpeakTo()
     {
         DialogueManager.Instance.StartDialogue(name, Dialogue.RootNode);
     }
+
 }

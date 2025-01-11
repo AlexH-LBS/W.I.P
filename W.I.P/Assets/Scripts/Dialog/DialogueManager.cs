@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI DialogTitleText, DialogBodyText; // Text components for title and body
     public GameObject responseButtonPrefab; // Prefab for generating response buttons
     public Transform responseButtonContainer; // Container to hold response buttons
+    public int romancePoints; //total romance points given
 
     private void Awake()
     {
@@ -62,10 +63,12 @@ public class DialogueManager : MonoBehaviour
         // Check if there's a follow-up node
         if (!response.nextNode.IsLastNode())
         {
+            romancePoints += response.responseValue;
             StartDialogue(title, response.nextNode); // Start next dialogue
         }
         else
         {
+            romancePoints += response.responseValue;
             // If no follow-up node, end the dialogue
             HideDialogue();
         }
@@ -74,6 +77,7 @@ public class DialogueManager : MonoBehaviour
     // Hide the dialogue UI
     public void HideDialogue()
     {
+        
         DialogueParent.SetActive(false);
     }
 
@@ -87,5 +91,9 @@ public class DialogueManager : MonoBehaviour
     public bool IsDialogueActive()
     {
         return DialogueParent.activeSelf;
+    }
+    public void ResetRomancePoints()
+    {
+        romancePoints = 0;
     }
 }

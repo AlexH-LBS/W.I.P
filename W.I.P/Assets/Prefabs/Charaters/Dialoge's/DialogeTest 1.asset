@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7b5975afd44494daa64bd87debcaa1, type: 3}
+  m_Name: DialogeTest 1
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueText: Want to know about the BCAN 1C?
+    responses:
+    - responseText: yes pls
+      responseValue: 10
+      nextNode:
+        dialogueText: The BCAN 1C features a highly advanced hydropneumatic suspension
+          system, allowing it to adjust its height for better stability during firing
+          or mobility across rugged terrain. This ability not only makes it more
+          effective in combat but also gives it a futuristic look as it "kneels"
+          before unleashing its powerful 155mm gun!
+        responses:
+        - responseText: Close
+          responseValue: 20
+          nextNode:
+            dialogueText: 
+            responses: []
+    - responseText: nuh uh
+      responseValue: -10
+      nextNode:
+        dialogueText: '>:c'
+        responses: []
+  totalValue: 0

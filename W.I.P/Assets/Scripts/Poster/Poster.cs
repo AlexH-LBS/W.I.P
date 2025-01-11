@@ -9,7 +9,6 @@ public class Poster : MonoBehaviour
     [SerializeField] public GameObject poster;
     void Start()
     {
-        this.points = points;
         poster.SetActive(false);
     }
 

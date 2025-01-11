@@ -16,6 +16,7 @@ MonoBehaviour:
     dialogueText: Want to know about the BCAN 1C?
     responses:
     - responseText: yes pls
+      responseValue: 10
       nextNode:
         dialogueText: The BCAN 1C features a highly advanced hydropneumatic suspension
           system, allowing it to adjust its height for better stability during firing
@@ -24,10 +25,13 @@ MonoBehaviour:
           before unleashing its powerful 155mm gun!
         responses:
         - responseText: Close
+          responseValue: 20
           nextNode:
             dialogueText: 
             responses: []
     - responseText: nuh uh
+      responseValue: -10
       nextNode:
         dialogueText: '>:c'
         responses: []
+  totalValue: 0
