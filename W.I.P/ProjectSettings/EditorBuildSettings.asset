@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Testing scenes/Test scene2.unity
     guid: 1f0f9893bc210c64ea6bae130b3ed34e
   - enabled: 1
-    path: Assets/Scenes/Testing scenes/Garage.unity
+    path: Assets/Scenes/Garage.unity
     guid: 1bad15287dff68840b043dc74897b1c6
   - enabled: 1
-    path: Assets/Scenes/Testing scenes/Poster.unity
+    path: Assets/Scenes/Poster.unity
     guid: c3b8aa26d2012fb4e811245e11f456e5
   m_configObjects: {}
