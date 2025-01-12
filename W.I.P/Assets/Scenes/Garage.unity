@@ -1779,6 +1779,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 664269564}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1964759418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8173276152327658360, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
+  m_PrefabInstance: {fileID: 4567566204162063049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3bfcd3f0ffaf7f4894e1cd3827409ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2002394595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,6 +1932,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1042118663}
     m_Modifications:
+    - target: {fileID: 2725661748506396954, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
+      propertyPath: senariodialog
+      value: 
+      objectReference: {fileID: 1964759418}
     - target: {fileID: 3153545980008705055, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.614698
@@ -1961,6 +1976,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8173276152327658360, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
+      propertyPath: Dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8173276152327658360, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
+      propertyPath: Dialogue.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 43fa66d36941b404399ac9b6a6843a42, type: 2}
+    - target: {fileID: 8173276152327658360, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
+      propertyPath: Dialogue.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: ad4430e24f21eec46a8c6a487ed05391, type: 2}
     - target: {fileID: 8671979576522409095, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
       propertyPath: m_Name
       value: Pop girly

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3828803576855939407}
   - component: {fileID: 5313419461626437165}
   - component: {fileID: 1511411789852982766}
+  - component: {fileID: 8173276152327658360}
   m_Layer: 0
   m_Name: Pop girly
   m_TagString: Pop
@@ -102,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Pop girl
   Dialogue: {fileID: 11400000, guid: 43fa66d36941b404399ac9b6a6843a42, type: 2}
+  senariodialog: {fileID: 0}
 --- !u!114 &3828803576855939407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,3 +179,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &8173276152327658360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8671979576522409095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3bfcd3f0ffaf7f4894e1cd3827409ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogue: []
+  TrueDialouge: {fileID: 0}
+  slected: 0

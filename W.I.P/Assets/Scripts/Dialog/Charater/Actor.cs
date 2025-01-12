@@ -6,6 +6,12 @@ public class Actor : MonoBehaviour
 {
     public string Name;
     public Dialogue Dialogue;
+    public senariodialog senariodialog;
+
+    private void Start()
+    {
+        Dialogue = senariodialog.GetComponent<Dialogue>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +20,8 @@ public class Actor : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         DialogueManager.Instance.HideDialogue();
+        senariodialog.senarioSelect();
+        Dialogue = senariodialog.GetComponent<Dialogue>();
     }
 
 
