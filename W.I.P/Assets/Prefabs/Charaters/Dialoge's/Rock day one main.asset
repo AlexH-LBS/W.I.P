@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7b5975afd44494daa64bd87debcaa1, type: 3}
+  m_Name: Rock day one main
+  m_EditorClassIdentifier: 
+  RootNode:
+    dialogueText: '*They look at you excitedly* Wanna go fuck up some trashcans?'
+    name: ROCK
+    responses:
+    - responseText: HELL YEAH!!!
+      responseValue: 1
+      name: YOU
+      nextNode:
+        dialogueText: Let's go OBLITERATE them!
+        name: YOU
+        responses:
+        - responseText: Continue
+          responseValue: 0
+          name: ROCK
+          nextNode:
+            dialogueText: I KNEW I COULD COUNT ON YOU!!! *a fire has been ignited
+              in their eyes*
+            name: ROCK
+            responses:
+            - responseText: Close
+              responseValue: 0
+              name: 
+              nextNode:
+                dialogueText: 
+                name: 
+                responses: []
+    - responseText: '*Give them a confused look*  '
+      responseValue: 0
+      name: YOU
+      nextNode:
+        dialogueText: ...What?
+        name: YOU
+        responses:
+        - responseText: Continue
+          responseValue: 0
+          name: ROCK
+          nextNode:
+            dialogueText: "*They look at you as if you\u2019re stupid, and turns
+              away*"
+            name: ROCK
+            responses:
+            - responseText: Close
+              responseValue: 0
+              name: 
+              nextNode:
+                dialogueText: 
+                name: 
+                responses: []
+    - responseText: Why?
+      responseValue: -1
+      name: YOU
+      nextNode:
+        dialogueText: Why?
+        name: YOU
+        responses:
+        - responseText: Continue
+          responseValue: 0
+          name: ROCK
+          nextNode:
+            dialogueText: Why not?
+            name: ROCK
+            responses:
+            - responseText: Close
+              responseValue: 0
+              name: 
+              nextNode:
+                dialogueText: 
+                name: 
+                responses: []
