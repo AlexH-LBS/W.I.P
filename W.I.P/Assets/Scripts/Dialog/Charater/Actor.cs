@@ -15,13 +15,13 @@ public class Actor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        DialogueManager.Instance.StartDialogue(name, Dialogue.RootNode);
+        DialogueManager.Instance.StartDialogue(Name, Dialogue.RootNode);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         DialogueManager.Instance.HideDialogue();
         senariodialog.senarioSelect();
-        Dialogue = senariodialog.GetComponent<Dialogue>();
+        Dialogue = senariodialog.GetComponent<senariodialog>().TrueDialouge;
     }
 
 
