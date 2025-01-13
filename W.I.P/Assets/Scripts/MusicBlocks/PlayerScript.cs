@@ -119,10 +119,16 @@ public class PlayerScript : MonoBehaviour
             text.text = score.ToString();
             longBlockScore = false;
         }
+        else
+        {
+            Popularity.fame(-10, 0);
+        }
         touching = false;
         longBlock = false;
-        }
-
-
+        }   
     
+    public void finish()
+    {
+
+    }
 }

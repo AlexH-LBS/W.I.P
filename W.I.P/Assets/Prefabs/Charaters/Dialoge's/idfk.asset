@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: idfk
   m_EditorClassIdentifier: 
   RootNode:
-    dialogueText: wannan suck
+    dialogueText: Want susi
     responses:
     - responseText: sure
       responseValue: 0
@@ -28,10 +28,5 @@ MonoBehaviour:
     - responseText: nah
       responseValue: 0
       nextNode:
-        dialogueText: gobble annyway
-        responses:
-        - responseText: close
-          responseValue: 0
-          nextNode:
-            dialogueText: 
-            responses: []
+        dialogueText: 
+        responses: []

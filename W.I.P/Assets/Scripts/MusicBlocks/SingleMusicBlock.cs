@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SingleMusicBlock : MonoBehaviour
 {
@@ -10,7 +12,6 @@ public class SingleMusicBlock : MonoBehaviour
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
         myRigidbody.velocity = new Vector2(0, -speed);
-
     }
     private void OnTriggerExit2D(Collider2D collision){
         Destroy(gameObject);
@@ -35,7 +36,7 @@ public class SingleMusicBlock : MonoBehaviour
     }
 
     private void OnDestroy(){
-        
+
     }
 
 

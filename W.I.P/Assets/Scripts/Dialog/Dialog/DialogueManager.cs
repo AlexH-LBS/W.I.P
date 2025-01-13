@@ -53,18 +53,18 @@ public class DialogueManager : MonoBehaviour
             buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.responseText;
 
             // Setup button to trigger SelectResponse when clicked
-            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title));
+            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response));
         }
     }
 
     // Handles response selection and triggers next dialogue node
-    public void SelectResponse(DialogueResponse response, string title)
+    public void SelectResponse(DialogueResponse response)
     {
         // Check if there's a follow-up node
         if (!response.nextNode.IsLastNode())
         {
             romancePoints += response.responseValue;
-            StartDialogue(title, response.nextNode); // Start next dialogue
+            StartDialogue(response.name, response.nextNode); // Start next dialogue
         }
         else
         {

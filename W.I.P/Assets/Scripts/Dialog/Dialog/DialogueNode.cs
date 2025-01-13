@@ -7,6 +7,7 @@ public class DialogueNode
 {
     //setup for the dialog system
     public string dialogueText;
+    public string name;
     public List<DialogueResponse> responses;
 
 
