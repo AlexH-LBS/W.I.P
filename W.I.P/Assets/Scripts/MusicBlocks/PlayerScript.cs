@@ -23,6 +23,7 @@ public class PlayerScript : MonoBehaviour
     //debug menu shit
     public TextMeshProUGUI text;
     public TextMeshProUGUI lastMove;
+    public Return Return;
 
     void Update()
     {
@@ -125,10 +126,14 @@ public class PlayerScript : MonoBehaviour
         }
         touching = false;
         longBlock = false;
+        if(collision.tag == "finish")
+        {
+            finish();
+        }
         }   
     
     public void finish()
     {
-
+        Return.unhide();
     }
 }

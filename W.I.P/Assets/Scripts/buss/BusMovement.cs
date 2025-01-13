@@ -10,6 +10,7 @@ public class BusMovement : MonoBehaviour
 
     Rigidbody2D bus;
     public float Speed;
+    public bool move;
     
     
     
@@ -21,32 +22,34 @@ public class BusMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
-        if (Input.GetKey(KeyCode.W))
+
+        if (move)
         {
-            bus.velocity += new Vector2(0, Speed);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            bus.velocity += new Vector2(0, -Speed);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            bus.velocity += new Vector2(-Speed,0);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            bus.velocity += new Vector2(Speed,0);
-        }
-        
-        if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
-        {
-            bus.velocity = new Vector2(0, 0);
-        }
-        else
-        {
-            bus.velocity = bus.velocity.normalized * Speed;
+            if (Input.GetKey(KeyCode.W))
+            {
+                bus.velocity += new Vector2(0, Speed);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                bus.velocity += new Vector2(0, -Speed);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                bus.velocity += new Vector2(-Speed, 0);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                bus.velocity += new Vector2(Speed, 0);
+            }
+
+            if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            {
+                bus.velocity = new Vector2(0, 0);
+            }
+            else
+            {
+                bus.velocity = bus.velocity.normalized * Speed;
+            }
         }
 
 

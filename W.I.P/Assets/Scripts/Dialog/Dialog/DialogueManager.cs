@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI DialogTitleText, DialogBodyText; // Text components for title and body
     public GameObject responseButtonPrefab; // Prefab for generating response buttons
     public Transform responseButtonContainer; // Container to hold response buttons
+    public BusMovement busMovement;
     public int romancePoints; //total romance points given
 
     private void Awake()
@@ -77,7 +78,7 @@ public class DialogueManager : MonoBehaviour
     // Hide the dialogue UI
     public void HideDialogue()
     {
-        
+        busMovement.move = true;
         DialogueParent.SetActive(false);
     }
 

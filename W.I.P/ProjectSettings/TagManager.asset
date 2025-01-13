@@ -11,6 +11,7 @@ TagManager:
   - Pop
   - Prep
   - Cowboy
+  - finish
   layers:
   - Default
   - TransparentFX

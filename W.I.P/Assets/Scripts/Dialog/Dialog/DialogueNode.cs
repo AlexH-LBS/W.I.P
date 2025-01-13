@@ -10,8 +10,6 @@ public class DialogueNode
     public string name;
     public List<DialogueResponse> responses;
 
-
-
     internal bool IsLastNode()
     {
         return responses.Count <= 0;

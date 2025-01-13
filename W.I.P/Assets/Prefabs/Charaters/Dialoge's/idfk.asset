@@ -14,19 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RootNode:
     dialogueText: Want susi
+    name: name
     responses:
     - responseText: sure
       responseValue: 0
+      name: g
       nextNode:
         dialogueText: gobble
+        name: name
         responses:
         - responseText: close
           responseValue: 0
+          name: 
           nextNode:
             dialogueText: 
+            name: 
             responses: []
     - responseText: nah
       responseValue: 0
+      name: 
       nextNode:
         dialogueText: 
+        name: 
         responses: []

@@ -47,11 +47,11 @@ MonoBehaviour:
                       I never really\u2026 Sorry. Yea he will probably respond soon. "
                     name: PREPPY
                     responses:
-                    - responseText: close
+                    - responseText: 
                       responseValue: 0
                       name: 
                       nextNode:
-                        dialogueText: close
+                        dialogueText: 
                         name: 
             - responseText: '*Tell a joke to lighten the mood* '
               responseValue: -2
