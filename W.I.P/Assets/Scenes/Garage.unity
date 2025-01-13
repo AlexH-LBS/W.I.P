@@ -1273,8 +1273,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogue:
+  - {fileID: 11400000, guid: 3900427ff7c6e8a44af8d96ad1ed50ad, type: 2}
   - {fileID: 11400000, guid: ad4430e24f21eec46a8c6a487ed05391, type: 2}
-  - {fileID: 11400000, guid: 43fa66d36941b404399ac9b6a6843a42, type: 2}
   TrueDialouge: {fileID: 0}
   slected: 1
 --- !u!1 &1284835971
@@ -1955,6 +1955,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1042118663}
     m_Modifications:
     - target: {fileID: 2725661748506396954, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
+      propertyPath: Dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 4749b8156846e9445af7d76022a92d91, type: 2}
+    - target: {fileID: 2725661748506396954, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
       propertyPath: senariodialog
       value: 
       objectReference: {fileID: 1964759418}
@@ -2005,7 +2009,7 @@ PrefabInstance:
     - target: {fileID: 8173276152327658360, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
       propertyPath: Dialogue.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 43fa66d36941b404399ac9b6a6843a42, type: 2}
+      objectReference: {fileID: 11400000, guid: 4749b8156846e9445af7d76022a92d91, type: 2}
     - target: {fileID: 8173276152327658360, guid: d80e685ff3e652a45a3d2e3a14cc0b53, type: 3}
       propertyPath: Dialogue.Array.data[1]
       value: 
@@ -2135,7 +2139,7 @@ PrefabInstance:
     - target: {fileID: 7495241339225610501, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
       propertyPath: Dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: ad4430e24f21eec46a8c6a487ed05391, type: 2}
+      objectReference: {fileID: 11400000, guid: 3900427ff7c6e8a44af8d96ad1ed50ad, type: 2}
     - target: {fileID: 7495241339225610501, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
       propertyPath: senariodialog
       value: 
