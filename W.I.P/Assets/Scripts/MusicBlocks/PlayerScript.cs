@@ -15,13 +15,12 @@ public class PlayerScript : MonoBehaviour
     public bool longBlock;
     public bool longBlockScore;
     //score duh
-    public int score;
+    public int hit;
     //error time for long
     public float errorTimeForLong = 0.25f;
     //to tell the popularity script hit
     public Popularity Popularity;
     //debug menu shit
-    public Score ScoreScrpit;
     public Return Return;
 
     void Update()
@@ -45,7 +44,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(input) && !touching)
         {
             print("missed " + gameObject.name);
-            Popularity.fame(-1, 0);
+            Popularity.fame(-1);
         }
     }
     //sets interaction to true then false after .05 seconds
@@ -70,7 +69,7 @@ public class PlayerScript : MonoBehaviour
                 Destroy(collision.gameObject);
             }
             longBlockScore = false;
-            Popularity.fame(-1, 0);
+            Popularity.fame(-1);
         }
         if (interaction){
             longBlockScore = true;
@@ -78,7 +77,7 @@ public class PlayerScript : MonoBehaviour
     }
     //update loop but only when touching block
     public void OnTriggerStay2D(Collider2D collision)
-        {
+    {
             //the thing that destroys the block and adds scores
             touching = true;
             //cheakcs if its long 
@@ -95,27 +94,33 @@ public class PlayerScript : MonoBehaviour
             }
             //score thingy
             if (interaction && !longBlock) {
-                score += 1;
+                hit += 1;
                 print("YOU SCORE");
                 //I added so that the hitmusic is mulitplied by 1%, probably doesnt work but you get roughly the point. is it possible to make the score and fame/hitmusic the same so we write less code and variables?
-                Popularity.fame(1, 0);
+                Popularity.fame(1);
                 Destroy(collision.gameObject);
             }
-        }
+    }
         //when collsion ends touching ends
-        private void OnTriggerExit2D(Collider2D collision)
-        {
+    private void OnTriggerExit2D(Collider2D collision)
+    {
 
         //score long block
         if (interaction && longBlockScore && longBlock){
-            score += 2;
+            hit += 2;
             print("YOU SCORE LONG");
-            Popularity.fame(2, 0);
+            Popularity.fame(2);
             longBlockScore = false;
         }
-        else
+        if (interaction && !longBlockScore && longBlock)
         {
-            Popularity.fame(-10, 0);
+            print("you missed long");
+            Popularity.fame(-5);
+        }
+        if(!interaction && touching && !longBlock)
+        {
+            print("you missed");
+            Popularity.fame(-5);
         }
         touching = false;
         longBlock = false;
@@ -123,11 +128,11 @@ public class PlayerScript : MonoBehaviour
         {
             finish();
         }
-        }   
+    }   
     
     public void finish()
     {
         Return.unhide();
-        ScoreScrpit.addPoints(score);
+        Score.Instance.addPoints(hit);
     }
 }
