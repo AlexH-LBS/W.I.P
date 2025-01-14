@@ -1295,10 +1295,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogue:
+  - {fileID: 11400000, guid: 4749b8156846e9445af7d76022a92d91, type: 2}
   - {fileID: 11400000, guid: 3900427ff7c6e8a44af8d96ad1ed50ad, type: 2}
   FillerDialogue: []
   TrueDialouge: {fileID: 0}
   random: 0
+--- !u!114 &1110555369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110555359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a424e4fbb2c08ca458296f3d9adab93b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1284835971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,7 +2175,7 @@ PrefabInstance:
     - target: {fileID: 7495241339225610501, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
       propertyPath: Dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 3900427ff7c6e8a44af8d96ad1ed50ad, type: 2}
+      objectReference: {fileID: 11400000, guid: 4749b8156846e9445af7d76022a92d91, type: 2}
     - target: {fileID: 7495241339225610501, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
       propertyPath: BusMovement
       value: 
@@ -2178,6 +2191,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 429740255580062961, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
       insertIndex: 3
       addedObject: {fileID: 1110555363}
+    - targetCorrespondingSourceObject: {fileID: 429740255580062961, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1110555369}
   m_SourcePrefab: {fileID: 100100000, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
 --- !u!1001 &6772489173859617335
 PrefabInstance:

@@ -14,85 +14,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RootNode:
     dialogueText: "UGH! WHY WON\u2019T HE RESPOND!?"
-    name: PREPPY
     responses:
     - responseText: Continue
       responseValue: 1
-      name: YOU
       nextNode:
         dialogueText: Who is it?
-        name: YOU
         responses:
         - responseText: Continue
           responseValue: 0
-          name: PREPPY
           nextNode:
             dialogueText: "It\u2019s my dad\u2026 He hasn\u2019t responded to me
               for a few days now\u2026 *Her anger has been totally replaced with
               sadness.* "
-            name: PREPPY
             responses:
             - responseText: '*Ask about their dad*'
               responseValue: 1
-              name: YOU
               nextNode:
                 dialogueText: Is your dad usually busy?
-                name: YOU
                 responses:
                 - responseText: Continue
                   responseValue: 0
-                  name: PREPPY
                   nextNode:
                     dialogueText: "Yea\u2026 He is abroad more than he\u2019s home.
                       I never really\u2026 Sorry. Yea he will probably respond soon. "
-                    name: PREPPY
                     responses:
-                    - responseText: 
+                    - responseText: close
                       responseValue: 0
-                      name: 
                       nextNode:
                         dialogueText: 
-                        name: 
             - responseText: '*Tell a joke to lighten the mood* '
               responseValue: -2
-              name: YOU
               nextNode:
                 dialogueText: 'That reminds me! Do you know why the dad brought a
                   ladder to the bar? Because he heard the drinks were on the house!
                   *Slaps knees* '
-                name: YOU
                 responses:
                 - responseText: Continue
                   responseValue: 0
-                  name: PREPPY
                   nextNode:
                     dialogueText: Whatever. *She turns her focus to her phone*
-                    name: PREPPY
                     responses:
                     - responseText: Close
                       responseValue: 0
-                      name: 
                       nextNode:
                         dialogueText: 
-                        name: 
             - responseText: '*Comfort them*'
               responseValue: 0
-              name: YOU
               nextNode:
                 dialogueText: He will respond soon, he has probably lost his phone
                   or something like that.
-                name: YOU
                 responses:
                 - responseText: Continue
                   responseValue: 0
-                  name: PREPPY
                   nextNode:
                     dialogueText: "Yeah, maybe\u2026"
-                    name: PREPPY
                     responses:
                     - responseText: Close
                       responseValue: 0
-                      name: 
                       nextNode:
                         dialogueText: 
-                        name: 

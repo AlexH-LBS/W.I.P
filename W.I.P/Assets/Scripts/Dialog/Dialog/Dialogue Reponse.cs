@@ -8,6 +8,6 @@ public class DialogueResponse
     //possible reponses and value of said reponse
     public string responseText;
     public int responseValue;
-    public string name;
     public DialogueNode nextNode;
+
 }

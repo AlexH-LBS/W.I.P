@@ -14,70 +14,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RootNode:
     dialogueText: '*They look at you excitedly* Wanna go fuck up some trashcans?'
-    name: ROCK
     responses:
-    - responseText: HELL YEAH!!!
+    - responseText: HELL YEAH!!! Let's go OBLITERATE them!
       responseValue: 1
-      name: YOU
       nextNode:
-        dialogueText: Let's go OBLITERATE them!
-        name: YOU
+        dialogueText: I KNEW I COULD COUNT ON YOU!!! *a fire has been ignited in
+          their eyes*
         responses:
-        - responseText: Continue
+        - responseText: close
           responseValue: 0
-          name: ROCK
           nextNode:
-            dialogueText: I KNEW I COULD COUNT ON YOU!!! *a fire has been ignited
-              in their eyes*
-            name: ROCK
-            responses:
-            - responseText: Close
-              responseValue: 0
-              name: 
-              nextNode:
-                dialogueText: 
-                name: 
-                responses: []
+            dialogueText: "\xB4"
+            responses: []
     - responseText: '*Give them a confused look*  '
       responseValue: 0
-      name: YOU
       nextNode:
         dialogueText: ...What?
-        name: YOU
         responses:
         - responseText: Continue
           responseValue: 0
-          name: ROCK
           nextNode:
             dialogueText: "*They look at you as if you\u2019re stupid, and turns
               away*"
-            name: ROCK
             responses:
             - responseText: Close
               responseValue: 0
-              name: 
               nextNode:
                 dialogueText: 
-                name: 
                 responses: []
     - responseText: Why?
       responseValue: -1
-      name: YOU
       nextNode:
         dialogueText: Why?
-        name: YOU
         responses:
         - responseText: Continue
           responseValue: 0
-          name: ROCK
           nextNode:
             dialogueText: Why not?
-            name: ROCK
             responses:
             - responseText: Close
               responseValue: 0
-              name: 
               nextNode:
                 dialogueText: 
-                name: 
                 responses: []

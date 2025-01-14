@@ -25,9 +25,6 @@ public class Spawner : MonoBehaviour
         timer -= Time.deltaTime;
         if(timer < 0)
         {
-            
-            BPS = ((float)TimeInBetween[witchOne]);
-            
             BPS = BPM / 60;
             timer = 1/BPS*(((float)TimeInBetween[witchOne]));
             Instantiate(Spawning, gameObject.transform.position, Quaternion.identity);

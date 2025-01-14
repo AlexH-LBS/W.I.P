@@ -21,8 +21,7 @@ public class PlayerScript : MonoBehaviour
     //to tell the popularity script hit
     public Popularity Popularity;
     //debug menu shit
-    public TextMeshProUGUI text;
-    public TextMeshProUGUI lastMove;
+    public Score ScoreScrpit;
     public Return Return;
 
     void Update()
@@ -46,7 +45,6 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(input) && !touching)
         {
             print("missed " + gameObject.name);
-            lastMove.text = "Miss";
             Popularity.fame(-1, 0);
         }
     }
@@ -72,7 +70,6 @@ public class PlayerScript : MonoBehaviour
                 Destroy(collision.gameObject);
             }
             longBlockScore = false;
-            lastMove.text = "Missed Long";
             Popularity.fame(-1, 0);
         }
         if (interaction){
@@ -90,7 +87,6 @@ public class PlayerScript : MonoBehaviour
                 longBlock = true;
             }
             if (interaction && longBlock) {
-                lastMove.text = "Hiting Long";
             }
             //if you miss the long block 
             if (!interaction && longBlock) {
@@ -103,9 +99,7 @@ public class PlayerScript : MonoBehaviour
                 print("YOU SCORE");
                 //I added so that the hitmusic is mulitplied by 1%, probably doesnt work but you get roughly the point. is it possible to make the score and fame/hitmusic the same so we write less code and variables?
                 Popularity.fame(1, 0);
-                text.text = score.ToString();
                 Destroy(collision.gameObject);
-                lastMove.text = "Hit";
             }
         }
         //when collsion ends touching ends
@@ -117,7 +111,6 @@ public class PlayerScript : MonoBehaviour
             score += 2;
             print("YOU SCORE LONG");
             Popularity.fame(2, 0);
-            text.text = score.ToString();
             longBlockScore = false;
         }
         else
@@ -135,5 +128,6 @@ public class PlayerScript : MonoBehaviour
     public void finish()
     {
         Return.unhide();
+        ScoreScrpit.addPoints(score);
     }
 }

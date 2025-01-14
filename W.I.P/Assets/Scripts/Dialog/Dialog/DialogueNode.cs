@@ -7,12 +7,11 @@ public class DialogueNode
 {
     //setup for the dialog system
     public string dialogueText;
-    public string name;
     public List<DialogueResponse> responses;
 
     internal bool IsLastNode()
     {
-        return responses.Count <= 0;
+            return responses.Count <= 0;
     }
 
 }
