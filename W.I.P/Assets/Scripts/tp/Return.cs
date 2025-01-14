@@ -21,8 +21,5 @@ public class Return : MonoBehaviour
     {
         SceneManager.LoadScene(loadScene);
     }
-    public void unhide()
-    {
-        gameObject.SetActive(true);
-    }
+
 }

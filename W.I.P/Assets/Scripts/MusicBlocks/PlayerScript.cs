@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    public static PlayerScript Instance { get; private set; }//make it refrnced in other scripts without doing fcking script sheit
     //custom input field 
     [SerializeField]
     KeyCode input;
@@ -16,13 +17,14 @@ public class PlayerScript : MonoBehaviour
     public bool longBlockScore;
     //score duh
     public int hit;
+    public bool ifHit;
     //error time for long
     public float errorTimeForLong = 0.25f;
     //to tell the popularity script hit
     public Popularity Popularity;
     //debug menu shit
     public Return Return;
-
+    public Score Score;
     void Update()
     {
         //if player hit while touching make it do some shit
@@ -44,7 +46,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(input) && !touching)
         {
             print("missed " + gameObject.name);
-            Popularity.fame(-1);
+            HORDisplay(false);
         }
     }
     //sets interaction to true then false after .05 seconds
@@ -69,37 +71,40 @@ public class PlayerScript : MonoBehaviour
                 Destroy(collision.gameObject);
             }
             longBlockScore = false;
-            Popularity.fame(-1);
+            Popularity.fame(0,1);
         }
         if (interaction){
             longBlockScore = true;
         }
     }
+
     //update loop but only when touching block
     public void OnTriggerStay2D(Collider2D collision)
     {
-            //the thing that destroys the block and adds scores
-            touching = true;
-            //cheakcs if its long 
-            if (collision.gameObject.tag == "LongMusicBlock")
-            {
-                longBlock = true;
-            }
-            if (interaction && longBlock) {
-            }
-            //if you miss the long block 
-            if (!interaction && longBlock) {
+        //the thing that destroys the block and adds scores
+        touching = true;
+        //cheakcs if its long 
+        if (collision.gameObject.tag == "LongMusicBlock")
+        {
+            longBlock = true;
+        }
+        if (interaction && longBlock) 
+        {
+
+        }
+        //if you miss the long block 
+        if (!interaction && longBlock) {
                 StartCoroutine(LongBlockInteraction(collision));
 
-            }
-            //score thingy
-            if (interaction && !longBlock) {
-                hit += 1;
-                print("YOU SCORE");
-                //I added so that the hitmusic is mulitplied by 1%, probably doesnt work but you get roughly the point. is it possible to make the score and fame/hitmusic the same so we write less code and variables?
-                Popularity.fame(1);
-                Destroy(collision.gameObject);
-            }
+        }
+        //score thingy
+        if (interaction && !longBlock) {
+            hit += 1;
+            print("YOU SCORE");
+            //I added so that the hitmusic is mulitplied by 1%, probably doesnt work but you get roughly the point. is it possible to make the score and fame/hitmusic the same so we write less code and variables?
+            Destroy(collision.gameObject);
+            HORDisplay(true);
+        }
     }
         //when collsion ends touching ends
     private void OnTriggerExit2D(Collider2D collision)
@@ -107,32 +112,57 @@ public class PlayerScript : MonoBehaviour
 
         //score long block
         if (interaction && longBlockScore && longBlock){
-            hit += 2;
+            hit += 1;
             print("YOU SCORE LONG");
-            Popularity.fame(2);
             longBlockScore = false;
+            HORDisplay(true);
         }
         if (interaction && !longBlockScore && longBlock)
         {
             print("you missed long");
-            Popularity.fame(-5);
+            HORDisplay(false);
         }
-        if(!interaction && touching && !longBlock)
+        if (!interaction && touching && !longBlock)
         {
             print("you missed");
-            Popularity.fame(-5);
+            HORDisplay(false);
+
         }
         touching = false;
         longBlock = false;
-        if(collision.tag == "finish")
-        {
-            finish();
-        }
     }   
     
     public void finish()
     {
-        Return.unhide();
-        Score.Instance.addPoints(hit);
+        Score.addints(hit);
+    }
+    public TextMeshProUGUI textDisplay;
+    public GameObject text;
+    public Color textColor;
+    private void Start()
+    {
+        text.SetActive(false);
+    }
+    public void HORDisplay(bool hitOrMiss)
+    {
+        text.SetActive(true);
+        if (hitOrMiss)
+        {
+            textDisplay.text = "HIT";
+            Popularity.fame(2.5f, 0);
+        }
+        if (!hitOrMiss)
+        {
+            textDisplay.text = "MISS";
+            Popularity.fame(0, 5);
+        }
+        hitOrMiss = false;
+        StartCoroutine(hideWait());
+    }
+    IEnumerator hideWait()
+    {
+        
+        yield return new WaitForSecondsRealtime(1f);
+        text.SetActive(false);
     }
 }
