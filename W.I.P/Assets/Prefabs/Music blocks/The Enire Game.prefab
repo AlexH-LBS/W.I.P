@@ -1527,7 +1527,7 @@ Transform:
   m_GameObject: {fileID: 4102144642472453129}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.36, y: -11.57, z: 13.47}
+  m_LocalPosition: {x: -3.36, y: -11.57, z: 15.56}
   m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2705,6 +2705,7 @@ MonoBehaviour:
   Popularity: {fileID: 2740849498736404710}
   fameText: {fileID: 6485312013645264811}
   fameint: 0
+  dialogue: 0
 --- !u!1 &7681163911415903210
 GameObject:
   m_ObjectHideFlags: 0
