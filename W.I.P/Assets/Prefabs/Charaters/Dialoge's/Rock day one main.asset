@@ -29,31 +29,20 @@ MonoBehaviour:
     - responseText: '*Give them a confused look*  '
       responseValue: 0
       nextNode:
-        dialogueText: ...What?
+        dialogueText: "*They look at you as if you\u2019re stupid, and turns away*"
         responses:
-        - responseText: Continue
+        - responseText: close
           responseValue: 0
           nextNode:
-            dialogueText: "*They look at you as if you\u2019re stupid, and turns
-              away*"
-            responses:
-            - responseText: Close
-              responseValue: 0
-              nextNode:
-                dialogueText: 
-                responses: []
+            dialogueText: 
+            responses: []
     - responseText: Why?
       responseValue: -1
       nextNode:
-        dialogueText: Why?
+        dialogueText: Why not?
         responses:
-        - responseText: Continue
+        - responseText: Close
           responseValue: 0
           nextNode:
-            dialogueText: Why not?
-            responses:
-            - responseText: Close
-              responseValue: 0
-              nextNode:
-                dialogueText: 
-                responses: []
+            dialogueText: 
+            responses: []
