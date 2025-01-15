@@ -27,7 +27,7 @@ public class Spawner : MonoBehaviour
         if(timer < 0)
         {
             BPS = BPM / 60;
-            if(witchOne > TimeInBetween.Length)
+            if(witchOne < TimeInBetween.Length)
             {
                 Destroy(gameObject);
             }
