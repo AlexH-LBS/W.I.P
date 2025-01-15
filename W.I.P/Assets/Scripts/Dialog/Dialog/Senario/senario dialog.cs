@@ -7,8 +7,12 @@ public class senariodialog : MonoBehaviour
     public Dialogue[] Dialogue;
     public Dialogue[] FillerDialogue;
     public Dialogue TrueDialouge;
-    private int slected = 1;
+    public int slected;
     public int random;
+    private void Start()
+    {
+        slected = PlayerPrefs.GetInt("dialogue");
+    }
     public void senarioSelect(bool isFiller)
     {
         if(!isFiller)
@@ -20,7 +24,6 @@ public class senariodialog : MonoBehaviour
         {
             fillerSenario();
         }
-
     }
     public void fillerSenario()
     {
