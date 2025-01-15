@@ -12,7 +12,6 @@ public class FinishBlock : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         UI.SetActive(true);
         playerScripts.finish();
     }

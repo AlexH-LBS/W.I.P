@@ -707,11 +707,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5369068491888036551, guid: 679afd42389387f4280d1ea104e9073e, type: 3}
   m_PrefabInstance: {fileID: 6297625661219949476}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &407787519 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8788022138404707657, guid: 611018290957f59488d11243ffca800b, type: 3}
-  m_PrefabInstance: {fileID: 9064025981679411858}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &433593811
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,27 +967,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!4 &595358890 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-  m_PrefabInstance: {fileID: 9064025981679411858}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &595358896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 407787519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3bfcd3f0ffaf7f4894e1cd3827409ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dialogue: []
-  FillerDialogue: []
-  TrueDialouge: {fileID: 0}
-  random: 0
 --- !u!4 &637879832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6905084734070949313, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
@@ -1272,7 +1246,6 @@ Transform:
   m_Children:
   - {fileID: 73704417}
   - {fileID: 637879832}
-  - {fileID: 595358890}
   - {fileID: 1557516716}
   - {fileID: 360672807}
   m_Father: {fileID: 664269564}
@@ -2115,6 +2088,10 @@ PrefabInstance:
       propertyPath: Prompt
       value: 
       objectReference: {fileID: 1340692531}
+    - target: {fileID: 8205122109109646171, guid: 679afd42389387f4280d1ea104e9073e, type: 3}
+      propertyPath: loadScene
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2256,74 +2233,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e9963aa0b0e2e7439388c8b029c6490, type: 3}
---- !u!1001 &9064025981679411858
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1042118663}
-    m_Modifications:
-    - target: {fileID: 2636575203481057080, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: BusMovement
-      value: 
-      objectReference: {fileID: 58513207}
-    - target: {fileID: 2636575203481057080, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: senariodialog
-      value: 
-      objectReference: {fileID: 595358896}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.600698
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.1579962
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.007163501
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883310393886681605, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8788022138404707657, guid: 611018290957f59488d11243ffca800b, type: 3}
-      propertyPath: m_Name
-      value: Yee Haw Man
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8788022138404707657, guid: 611018290957f59488d11243ffca800b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 595358896}
-  m_SourcePrefab: {fileID: 100100000, guid: 611018290957f59488d11243ffca800b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

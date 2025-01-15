@@ -131,7 +131,7 @@ public class PlayerScript : MonoBehaviour
         touching = false;
         longBlock = false;
     }   
-    
+    //HitOrMiss part of le scropt
     public void finish()
     {
         Score.addints(hit);
@@ -146,6 +146,7 @@ public class PlayerScript : MonoBehaviour
     public void HORDisplay(bool hitOrMiss)
     {
         text.SetActive(true);
+        textDisplay.color = textColor;
         if (hitOrMiss)
         {
             textDisplay.text = "HIT";
