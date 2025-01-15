@@ -15,61 +15,40 @@ MonoBehaviour:
   RootNode:
     dialogueText: "UGH! WHY WON\u2019T HE RESPOND!?"
     responses:
-    - responseText: Continue
+    - responseText: Who is it?
       responseValue: 1
       nextNode:
-        dialogueText: Who is it?
+        dialogueText: "It\u2019s my dad\u2026 He hasn\u2019t responded to me for
+          a few days now\u2026 *Her anger has been totally replaced with sorrow.* "
         responses:
-        - responseText: Continue
+        - responseText: '*Ask about their dad*'
           responseValue: 0
           nextNode:
-            dialogueText: "It\u2019s my dad\u2026 He hasn\u2019t responded to me
-              for a few days now\u2026 *Her anger has been totally replaced with
-              sadness.* "
+            dialogueText: "Yea\u2026 He is abroad more than he\u2019s home. I never
+              really\u2026 Sorry. Yea he will probably respond soon. "
             responses:
-            - responseText: '*Ask about their dad*'
+            - responseText: close
               responseValue: 1
               nextNode:
-                dialogueText: Is your dad usually busy?
-                responses:
-                - responseText: Continue
-                  responseValue: 0
-                  nextNode:
-                    dialogueText: "Yea\u2026 He is abroad more than he\u2019s home.
-                      I never really\u2026 Sorry. Yea he will probably respond soon. "
-                    responses:
-                    - responseText: close
-                      responseValue: 0
-                      nextNode:
-                        dialogueText: 
-            - responseText: '*Tell a joke to lighten the mood* '
-              responseValue: -2
+                dialogueText: 
+                responses: []
+        - responseText: '*Tell a joke to lighten the mood* '
+          responseValue: -2
+          nextNode:
+            dialogueText: Whatever. *She turns her focus to her phone*
+            responses:
+            - responseText: close
+              responseValue: 1
               nextNode:
-                dialogueText: 'That reminds me! Do you know why the dad brought a
-                  ladder to the bar? Because he heard the drinks were on the house!
-                  *Slaps knees* '
-                responses:
-                - responseText: Continue
-                  responseValue: 0
-                  nextNode:
-                    dialogueText: Whatever. *She turns her focus to her phone*
-                    responses:
-                    - responseText: Close
-                      responseValue: 0
-                      nextNode:
-                        dialogueText: 
-            - responseText: '*Comfort them*'
-              responseValue: 0
+                dialogueText: 
+                responses: []
+        - responseText: '*Comfort them*'
+          responseValue: 0
+          nextNode:
+            dialogueText: "Yeah, maybe\u2026"
+            responses:
+            - responseText: close
+              responseValue: 1
               nextNode:
-                dialogueText: He will respond soon, he has probably lost his phone
-                  or something like that.
-                responses:
-                - responseText: Continue
-                  responseValue: 0
-                  nextNode:
-                    dialogueText: "Yeah, maybe\u2026"
-                    responses:
-                    - responseText: Close
-                      responseValue: 0
-                      nextNode:
-                        dialogueText: 
+                dialogueText: 
+                responses: []

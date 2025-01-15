@@ -1268,7 +1268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogue:
-  - {fileID: 11400000, guid: 4749b8156846e9445af7d76022a92d91, type: 2}
+  - {fileID: 11400000, guid: 3900427ff7c6e8a44af8d96ad1ed50ad, type: 2}
   - {fileID: 11400000, guid: 3900427ff7c6e8a44af8d96ad1ed50ad, type: 2}
   FillerDialogue: []
   TrueDialouge: {fileID: 0}
@@ -2233,7 +2233,7 @@ PrefabInstance:
     - target: {fileID: 7495241339225610501, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
       propertyPath: Dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 4749b8156846e9445af7d76022a92d91, type: 2}
+      objectReference: {fileID: 11400000, guid: 3900427ff7c6e8a44af8d96ad1ed50ad, type: 2}
     - target: {fileID: 7495241339225610501, guid: 7811aecf4c09252439d1cce569724c5e, type: 3}
       propertyPath: BusMovement
       value: 
