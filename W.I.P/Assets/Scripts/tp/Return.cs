@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Return : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Return : MonoBehaviour
     public Popularity Popularity;
     public TextMeshProUGUI fameText;
     public float fameint;
+    public int dialogue;
 
     private void Update()
     {
@@ -19,6 +21,7 @@ public class Return : MonoBehaviour
     }
     public void LoadScene()
     {
+        PlayerPrefs.SetInt("dialogue", dialogue);//set the dialogue the player is on
         SceneManager.LoadScene(loadScene);
     }
 

@@ -9,12 +9,13 @@ public class Actor : MonoBehaviour
     public senariodialog senariodialog;
     public bool isfiller;
     public BusMovement BusMovement;
-    public bool isPlayerNearby;
+    public bool isPlayerNearby = false;
     public GameObject charaterImg;
 
     private void Start()
     {
         Dialogue = senariodialog.GetComponent<Dialogue>();
+        isPlayerNearby = false;
     }
     private void Update()
     {
@@ -32,7 +33,7 @@ public class Actor : MonoBehaviour
     {
         isPlayerNearby = false;
         DialogueManager.Instance.HideDialogue(charaterImg);
-        senariodialog.senarioSelect(isfiller = true);
+        senariodialog.senarioSelect(isfiller = false);
         Dialogue = senariodialog.GetComponent<senariodialog>().TrueDialouge;
     }
     public void BackFromGig()

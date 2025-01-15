@@ -30,7 +30,7 @@ public class TestScriptGigLocation : MonoBehaviour
             if (Input.GetKeyDown(input))
             {
                 //This happens if youre in range :>>>
-                SceneManager.LoadScene(loadScene);
+                loadSceehee();
             }
         }
         else
@@ -38,7 +38,10 @@ public class TestScriptGigLocation : MonoBehaviour
             Prompt.SetActive(false);
         }
     }
-
+    public void loadSceehee()
+    {
+        SceneManager.LoadScene(loadScene);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isPlayerNearby = true;
