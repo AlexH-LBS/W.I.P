@@ -46,12 +46,12 @@ public class BusMovement : MonoBehaviour
             {
                 bus.velocity = new Vector2(0, 0);
             }
+            else
+            {
+                bus.velocity = bus.velocity.normalized * Speed;
+            }
+        }
 
-        }
-        else
-        {
-            bus.velocity = bus.velocity.normalized * Speed;
-        }
 
 
     }

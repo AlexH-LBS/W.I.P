@@ -10,6 +10,7 @@ public class Actor : MonoBehaviour
     public bool isfiller;
     public BusMovement BusMovement;
     public bool isPlayerNearby;
+    public GameObject charaterImg;
 
     private void Start()
     {
@@ -19,7 +20,7 @@ public class Actor : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            DialogueManager.Instance.StartDialogue(Name, Dialogue.RootNode);
+            DialogueManager.Instance.StartDialogue(Name, Dialogue.RootNode, charaterImg);
             BusMovement.move = false;
         }
     }
@@ -30,7 +31,7 @@ public class Actor : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         isPlayerNearby = false;
-        DialogueManager.Instance.HideDialogue();
+        DialogueManager.Instance.HideDialogue(charaterImg);
         senariodialog.senarioSelect(isfiller = true);
         Dialogue = senariodialog.GetComponent<senariodialog>().TrueDialouge;
     }

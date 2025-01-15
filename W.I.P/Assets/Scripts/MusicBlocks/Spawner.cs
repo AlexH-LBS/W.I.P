@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Spawner : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class Spawner : MonoBehaviour
         if(timer < 0)
         {
             BPS = BPM / 60;
+            if(witchOne > TimeInBetween.Length)
+            {
+                Destroy(gameObject);
+            }
             timer = 1/BPS*(((float)TimeInBetween[witchOne]));
             Instantiate(Spawning, gameObject.transform.position, Quaternion.identity);
             witchOne++;

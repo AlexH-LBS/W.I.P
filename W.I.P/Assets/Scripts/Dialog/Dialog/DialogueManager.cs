@@ -28,14 +28,14 @@ public class DialogueManager : MonoBehaviour
         }
 
         // Initially hide the dialogue UI
-        HideDialogue();
+        HideDialogue(null);
     }
 
     // Starts the dialogue with given title and dialogue node
-    public void StartDialogue(string title, DialogueNode node)
+    public void StartDialogue(string title, DialogueNode node, GameObject CharaterImg)
     {
         // Display the dialogue UI
-        ShowDialogue();
+        ShowDialogue(CharaterImg);
 
         // Set dialogue title and body text
         DialogTitleText.text = title;
@@ -54,38 +54,40 @@ public class DialogueManager : MonoBehaviour
             buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.responseText;
 
             // Setup button to trigger SelectResponse when clicked
-            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title));
+            buttonObj.GetComponent<Button>().onClick.AddListener(() => SelectResponse(response, title, CharaterImg));
         }
     }
 
     // Handles response selection and triggers next dialogue node
-    public void SelectResponse(DialogueResponse response, string title)
+    public void SelectResponse(DialogueResponse response, string title, GameObject CharaterImg)
     {
         // Check if there's a follow-up node
         if (!response.nextNode.IsLastNode())
         {
             romancePoints += response.responseValue;
-            StartDialogue(title, response.nextNode); // Start next dialogue
+            StartDialogue(title, response.nextNode, CharaterImg); // Start next dialogue
         }
         else
         {
             romancePoints += response.responseValue;
             // If no follow-up node, end the dialogue
-            HideDialogue();
+            HideDialogue(CharaterImg);
         }
     }
 
     // Hide the dialogue UI
-    public void HideDialogue()
+    public void HideDialogue(GameObject CharaterImg)
     {
         busMovement.move = true;
         DialogueParent.SetActive(false);
+        CharaterImg.SetActive(false);
     }
 
     // Show the dialogue UI
-    private void ShowDialogue()
+    private void ShowDialogue(GameObject CharaterImg)
     {
         DialogueParent.SetActive(true);
+        CharaterImg.SetActive(true);
     }
 
     // Check if dialogue is currently active
