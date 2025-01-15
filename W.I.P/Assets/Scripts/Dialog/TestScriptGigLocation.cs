@@ -8,7 +8,7 @@ public class TestScriptGigLocation : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public bool isPlayerNearby;
+    private bool isPlayerNearby;
 
     public GameObject Prompt;
 

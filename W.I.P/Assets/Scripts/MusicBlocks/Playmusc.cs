@@ -5,16 +5,18 @@ using UnityEngine;
 
 public class Playmusc : MonoBehaviour
 {
-    public float timer;
+    public int speed = 4;
+    Rigidbody2D myRigidbody;
     public AudioSource Playing;
     public void Start()
     {
-        StartCoroutine(playmucis());
+        Playing.Pause();
+        myRigidbody = GetComponent<Rigidbody2D>();
+        myRigidbody.velocity = new Vector2(0, -speed);
     }
-
-    IEnumerator playmucis()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        yield return new WaitForSecondsRealtime(timer);
         Playing.Play();
+        Destroy(gameObject);
     }
 }
