@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Playmusc : MonoBehaviour
 {
     public float timer;
     public AudioSource Playing;
-    void Update()
+    public void Start()
     {
-        timer -= Time.deltaTime;
-        if (timer < 0)
-        {
-            Playing.Play();
-        }
+        StartCoroutine(playmucis());
+    }
+
+    IEnumerator playmucis()
+    {
+        yield return new WaitForSecondsRealtime(timer);
+        Playing.Play();
     }
 }
