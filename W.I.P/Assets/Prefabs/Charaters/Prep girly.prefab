@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8671979576522409095}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.614698, y: -4.842004, z: -0.007163501}
+  m_LocalPosition: {x: -8.81, y: -4.88, z: -0.007163501}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 1505199198, guid: 4e9e84e39766bb740944d4c310c4b66e, type: 3}
   m_Color: {r: 1, g: 0.48584908, b: 0.7982728, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,7 +106,6 @@ MonoBehaviour:
   senariodialog: {fileID: 8173276152327658360}
   isfiller: 0
   BusMovement: {fileID: 0}
-  isPlayerNearby: 0
   charaterImg: {fileID: 0}
 --- !u!50 &5313419461626437165
 Rigidbody2D:
@@ -187,6 +186,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ad4430e24f21eec46a8c6a487ed05391, type: 2}
   FillerDialogue: []
   TrueDialouge: {fileID: 0}
+  slected: 0
   random: 0
 --- !u!114 &6082107218165799359
 MonoBehaviour:
