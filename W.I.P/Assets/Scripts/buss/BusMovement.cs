@@ -11,12 +11,16 @@ public class BusMovement : MonoBehaviour
     Rigidbody2D bus;
     public float Speed;
     public bool move;
-    
-    
+
+    [SerializeField] private AudioClip feet;
+    private AudioSource audioSource;
+    private bool iswalking = false;
     
     void Start()
     {
         bus = GetComponent<Rigidbody2D>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,6 +54,27 @@ public class BusMovement : MonoBehaviour
             {
                 bus.velocity = bus.velocity.normalized * Speed;
             }
+        }
+
+        //footstepsounds :)
+        if (bus.velocity.x != 0 || bus.velocity.y != 0)
+        {
+            iswalking = true;
+        }
+        if(bus.velocity.x == 0 && bus.velocity.y == 0)
+        {
+            iswalking = false;
+        }
+        if (iswalking && !audioSource.isPlaying)
+        {
+
+            
+            audioSource.Play();
+            
+        }
+        if(!iswalking && audioSource.isPlaying)
+        {
+            audioSource.Stop();
         }
 
 

@@ -106,7 +106,6 @@ MonoBehaviour:
   senariodialog: {fileID: 8715856114004770855}
   isfiller: 0
   BusMovement: {fileID: 0}
-  isPlayerNearby: 0
   charaterImg: {fileID: 0}
 --- !u!114 &8715856114004770855
 MonoBehaviour:
@@ -125,6 +124,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3900427ff7c6e8a44af8d96ad1ed50ad, type: 2}
   FillerDialogue: []
   TrueDialouge: {fileID: 0}
+  slected: 0
   random: 0
 --- !u!50 &6906843410632091187
 Rigidbody2D:
