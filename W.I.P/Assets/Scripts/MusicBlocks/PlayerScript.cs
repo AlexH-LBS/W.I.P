@@ -43,7 +43,7 @@ public class PlayerScript : MonoBehaviour
             StartCoroutine(InteractedAtMoment());
         }
         //if player pressed when not touching it say miss
-        if (Input.GetKey(input) && !touching)
+        if (Input.GetKeyDown(input) && !touching)
         {
             print("missed " + gameObject.name);
             HORDisplay(false);
