@@ -61,7 +61,7 @@ public class BusMovement : MonoBehaviour
         {
             iswalking = true;
         }
-        if(bus.velocity.x == 0 || bus.velocity.y == 0)
+        if(bus.velocity.x == 0 && bus.velocity.y == 0)
         {
             iswalking = false;
         }
