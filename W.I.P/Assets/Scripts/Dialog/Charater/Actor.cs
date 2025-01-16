@@ -11,10 +11,10 @@ public class Actor : MonoBehaviour
     public BusMovement BusMovement;
     public GameObject charaterImg;
     private bool isPlayerNearby;
-
     private void Start()
     {
         Dialogue = senariodialog.GetComponent<Dialogue>();
+
     }
     private void Update()
     {
