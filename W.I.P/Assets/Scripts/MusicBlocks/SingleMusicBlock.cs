@@ -33,6 +33,7 @@ public class SingleMusicBlock : MonoBehaviour
         {
             gameObject.GetComponent<Renderer>().material.color = new Color(0, 200, 255);
         }
+        transform.position = new Vector3(collision.transform.position.x, transform.position.y);
     }
 
     private void OnDestroy(){

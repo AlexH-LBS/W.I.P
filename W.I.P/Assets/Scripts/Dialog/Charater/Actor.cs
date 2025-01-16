@@ -9,21 +9,21 @@ public class Actor : MonoBehaviour
     public senariodialog senariodialog;
     public bool isfiller;
     public BusMovement BusMovement;
-    public bool isPlayerNearby = false;
     public GameObject charaterImg;
+    private bool isPlayerNearby;
 
     private void Start()
     {
         Dialogue = senariodialog.GetComponent<Dialogue>();
-        isPlayerNearby = false;
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isPlayerNearby)
         {
             DialogueManager.Instance.StartDialogue(Name, Dialogue.RootNode, charaterImg);
             BusMovement.move = false;
         }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
