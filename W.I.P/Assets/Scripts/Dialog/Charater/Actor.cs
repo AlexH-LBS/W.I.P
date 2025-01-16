@@ -10,7 +10,7 @@ public class Actor : MonoBehaviour
     public bool isfiller;
     public BusMovement BusMovement;
     public GameObject charaterImg;
-    private bool isPlayerNearby;
+    public bool isPlayerNearby;
     private void Start()
     {
         Dialogue = senariodialog.GetComponent<Dialogue>();
@@ -27,7 +27,10 @@ public class Actor : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isPlayerNearby = true;
+        if (collision.tag == "Cowboy")
+        {
+            isPlayerNearby = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

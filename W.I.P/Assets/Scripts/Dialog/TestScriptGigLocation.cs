@@ -44,7 +44,10 @@ public class TestScriptGigLocation : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isPlayerNearby = true;
+        if(collision.tag == "Cowboy")
+        {
+            isPlayerNearby = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

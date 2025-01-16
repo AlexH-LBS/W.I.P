@@ -136,9 +136,10 @@ GameObject:
   - component: {fileID: 58513210}
   - component: {fileID: 58513211}
   - component: {fileID: 58513212}
+  - component: {fileID: 58513213}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Cowboy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,7 +200,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 1426627937, guid: 7322cccaf758aec41b10e1f6a4d91a74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -219,8 +220,8 @@ Transform:
   m_GameObject: {fileID: 58513206}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.24, y: -0.91, z: -2.22}
-  m_LocalScale: {x: 0.5, y: 1, z: 1}
+  m_LocalPosition: {x: 0.84, y: 0.26, z: -2.22}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -284,7 +285,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.32}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -295,7 +296,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.2}
   m_EdgeRadius: 0
 --- !u!82 &58513212
 AudioSource:
@@ -393,6 +394,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &58513213
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58513206}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c4c02f29e4eee1428600ff6d4d06862, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &73704417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3153545980008705055, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
@@ -6593,6 +6615,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 1042118663}
     m_Modifications:
     - target: {fileID: 1511411789852982766, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511411789852982766, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511411789852982766, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511411789852982766, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -6614,7 +6648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3153545980008705055, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.57
+      value: -1.57
       objectReference: {fileID: 0}
     - target: {fileID: 3153545980008705055, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6648,6 +6682,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7049641474661339283, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049641474661339283, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049641474661339283, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8671979576522409095, guid: 5caca81616e782a45b4a802c14fc30b0, type: 3}
       propertyPath: m_Name
       value: Prep girly
@@ -6672,6 +6718,10 @@ PrefabInstance:
     - target: {fileID: 4267676922149089447, guid: 679afd42389387f4280d1ea104e9073e, type: 3}
       propertyPath: m_Name
       value: Gigs
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267676922149089447, guid: 679afd42389387f4280d1ea104e9073e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4385014863833525757, guid: 679afd42389387f4280d1ea104e9073e, type: 3}
       propertyPath: m_Enabled
@@ -6829,21 +6879,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 570123484091483597, guid: 2e9963aa0b0e2e7439388c8b029c6490, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5156644468786902226, guid: 2e9963aa0b0e2e7439388c8b029c6490, type: 3}
       propertyPath: Prompt
       value: 
       objectReference: {fileID: 437460170}
+    - target: {fileID: 5156644468786902226, guid: 2e9963aa0b0e2e7439388c8b029c6490, type: 3}
+      propertyPath: loadScene
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7801454394637347544, guid: 2e9963aa0b0e2e7439388c8b029c6490, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8907352859910307341, guid: 2e9963aa0b0e2e7439388c8b029c6490, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.95
+      value: 5.32
       objectReference: {fileID: 0}
     - target: {fileID: 8907352859910307341, guid: 2e9963aa0b0e2e7439388c8b029c6490, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.92
+      value: -0.95
       objectReference: {fileID: 0}
     - target: {fileID: 8907352859910307341, guid: 2e9963aa0b0e2e7439388c8b029c6490, type: 3}
       propertyPath: m_LocalPosition.z
