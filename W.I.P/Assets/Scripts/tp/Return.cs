@@ -13,6 +13,7 @@ public class Return : MonoBehaviour
     public TextMeshProUGUI fameText;
     public float fameint;
     public int dialogue;
+    public bool end;
 
     private void Update()
     {
@@ -22,6 +23,10 @@ public class Return : MonoBehaviour
     public void LoadScene()
     {
         PlayerPrefs.SetInt("dialogue", dialogue);//set the dialogue the player is on
+        if(end)
+        {
+            PlayerPrefs.SetString("end", "true");
+        }
         SceneManager.LoadScene(loadScene);
     }
 
