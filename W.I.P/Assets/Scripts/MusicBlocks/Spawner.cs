@@ -18,22 +18,29 @@ public class Spawner : MonoBehaviour
         BPS = ((float)TimeInBetween[witchOne]);
         BPS = BPM / 60;
         timer = 1 / BPS;
+        StartCoroutine(timeor());
     }
 
 
     void Update()
     {
-        timer -= Time.deltaTime;
-        if(timer < 0)
+
+    }
+    IEnumerator timeor()
+    {
+        yield return new WaitForSeconds(timer);
+        BPS = BPM / 60;
+        if (witchOne > TimeInBetween.Length)
         {
-            BPS = BPM / 60;
-            if(witchOne > TimeInBetween.Length)
-            {
-                Destroy(gameObject);
-            }
-            timer = 1/BPS*(((float)TimeInBetween[witchOne]));
-            Instantiate(Spawning, gameObject.transform.position, Quaternion.identity);
-            witchOne++;
+            Destroy(gameObject);
         }
+        timer = 1 / BPS * (((float)TimeInBetween[witchOne]));
+        Instantiate(Spawning, gameObject.transform.position, Quaternion.identity);
+        witchOne++;
+        restart();
+    }
+    void restart()
+    {
+        StartCoroutine(timeor());
     }
 }
