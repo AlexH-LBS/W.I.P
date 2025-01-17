@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Songs/Song 2.unity
     guid: 663f8f8286c366947b88c91a404f0207
   - enabled: 1
-    path: Assets/Scenes/Testing scenes/FNF Test.unity
+    path: Assets/Scenes/Songs/Tutorial.unity
     guid: b4a8bb9952564e04aa53e8f8053cbd50
   - enabled: 1
     path: Assets/Scenes/Credits.unity
