@@ -17,7 +17,11 @@ public class Playmusc : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Playing.Play();
-        Destroy(gameObject);
+        if(collision.tag == "Player")
+        {
+            Playing.Play();
+            Destroy(gameObject);
+        }
+
     }
 }
