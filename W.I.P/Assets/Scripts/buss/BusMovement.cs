@@ -53,7 +53,7 @@ public class BusMovement : MonoBehaviour
             }
             if(Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneManager.LoadScene(5);
+                SceneManager.LoadScene(0);
             }
 
             if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))

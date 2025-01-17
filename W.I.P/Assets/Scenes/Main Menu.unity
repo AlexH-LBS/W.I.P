@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c71d23119fec244992e2bbed0f290bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadScene: 4
+  loadScene: 5
   exit: 0
 --- !u!4 &1537129963
 Transform:
@@ -1489,7 +1489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c71d23119fec244992e2bbed0f290bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadScene: 0
+  loadScene: 1
   exit: 0
 --- !u!4 &1956389380
 Transform:
