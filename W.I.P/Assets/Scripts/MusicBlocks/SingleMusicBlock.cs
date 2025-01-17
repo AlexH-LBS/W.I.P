@@ -9,6 +9,7 @@ public class SingleMusicBlock : MonoBehaviour
     public int speed = 4;
     Rigidbody2D myRigidbody;
     public Popularity popularity;
+
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
         myRigidbody.velocity = new Vector2(0, -speed);
