@@ -76,7 +76,14 @@ public class BusMovement : MonoBehaviour
         if(bus.velocity.x == 0 && bus.velocity.y == 0)
         {
             iswalking = false;
-            animator.Play("Idle");
+            if(Direction == "Walking")
+            {
+                animator.Play("Idle");
+            }
+            if (Direction == "Walking-")
+            {
+                animator.Play("MirroedIdle");
+            }
         }
         if (iswalking && !audioSource.isPlaying)
         {
