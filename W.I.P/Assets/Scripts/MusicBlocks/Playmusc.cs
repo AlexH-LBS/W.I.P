@@ -10,7 +10,7 @@ public class Playmusc : MonoBehaviour
     public AudioSource Playing;
     public void Start()
     {
-        
+        Playing.Play();   
         myRigidbody = GetComponent<Rigidbody2D>();
         myRigidbody.velocity = new Vector2(0, -speed);
         Playing.Pause();
