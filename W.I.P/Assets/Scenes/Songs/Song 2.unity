@@ -1659,7 +1659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: TimeInBetween.Array.data[33]
-      value: 4.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3102913598038498760, guid: f24fa69b78bd8ba4ca82b8d1673741ce, type: 3}
       propertyPath: TimeInBetween.Array.data[34]
@@ -2441,10 +2441,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 15.33
       objectReference: {fileID: 0}
-    - target: {fileID: 368512029818100053, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
-      propertyPath: timer
-      value: 45
-      objectReference: {fileID: 0}
     - target: {fileID: 635303623612535381, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: m_fontSizeBase
       value: 120
@@ -2457,17 +2453,9 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1985580964926591362, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
-      propertyPath: timer
-      value: 45
-      objectReference: {fileID: 0}
     - target: {fileID: 2290529467494468439, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2290529467494468439, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4
+      value: -22.71
       objectReference: {fileID: 0}
     - target: {fileID: 2485099504617284706, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: m_Name
@@ -2585,6 +2573,7 @@ PrefabInstance:
       propertyPath: dialogue
       value: 2
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -2653,6 +2642,8 @@ PrefabInstance:
       value: 9.89
 >>>>>>> Stashed changes
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 4584880 (finished song)
     m_RemovedComponents:
     - {fileID: 9044777733613202882, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
     m_RemovedGameObjects:
