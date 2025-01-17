@@ -264,16 +264,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9ab6e69d3f3314586b9d93756f789b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: 97
+  input: 113
   touching: 0
   interaction: 0
   longBlock: 0
   longBlockScore: 0
-  score: 0
+  hit: 0
+  ifHit: 0
   errorTimeForLong: 0.25
   Popularity: {fileID: 0}
+  Return: {fileID: 0}
+  Score: {fileID: 0}
+  textDisplay: {fileID: 0}
   text: {fileID: 0}
-  lastMove: {fileID: 0}
+  textColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!61 &5583723834950836600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -548,16 +552,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9ab6e69d3f3314586b9d93756f789b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: 115
+  input: 119
   touching: 0
   interaction: 0
   longBlock: 0
   longBlockScore: 0
-  score: 0
+  hit: 0
+  ifHit: 0
   errorTimeForLong: 0.25
   Popularity: {fileID: 0}
+  Return: {fileID: 0}
+  Score: {fileID: 0}
+  textDisplay: {fileID: 0}
   text: {fileID: 0}
-  lastMove: {fileID: 0}
+  textColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!61 &185491670994784491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -832,16 +840,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9ab6e69d3f3314586b9d93756f789b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: 100
+  input: 111
   touching: 0
   interaction: 0
   longBlock: 0
   longBlockScore: 0
-  score: 0
+  hit: 0
+  ifHit: 0
   errorTimeForLong: 0.25
   Popularity: {fileID: 0}
+  Return: {fileID: 0}
+  Score: {fileID: 0}
+  textDisplay: {fileID: 0}
   text: {fileID: 0}
-  lastMove: {fileID: 0}
+  textColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!61 &1765996788325041402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -986,16 +998,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9ab6e69d3f3314586b9d93756f789b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: 102
+  input: 112
   touching: 0
   interaction: 0
   longBlock: 0
   longBlockScore: 0
-  score: 0
+  hit: 0
+  ifHit: 0
   errorTimeForLong: 0.25
   Popularity: {fileID: 0}
+  Return: {fileID: 0}
+  Score: {fileID: 0}
+  textDisplay: {fileID: 0}
   text: {fileID: 0}
-  lastMove: {fileID: 0}
+  textColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!61 &7541796849279191100
 BoxCollider2D:
   m_ObjectHideFlags: 0
