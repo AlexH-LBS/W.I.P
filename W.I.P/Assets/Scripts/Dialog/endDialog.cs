@@ -13,7 +13,8 @@ public class endDialog : MonoBehaviour
     {
         popdia.SetActive(false);
         prepdia.SetActive(false);
-
+        polydia.SetActive(false);
+        offScreenDeathDialogue.SetActive(false );
     }
 
     // Update is called once per frame
@@ -28,11 +29,18 @@ public class endDialog : MonoBehaviour
             if(pop > prep)
             {
                 popdia.SetActive(true);
+                timer();
             }
             if(prep > pop)
             {
                 prepdia.SetActive(true);
+                timer();
             }
         }
+    }
+    IEnumerator timer()
+    {
+        yield return new WaitForSeconds(20);
+        Application.Quit();
     }
 }
