@@ -17,6 +17,7 @@ public class SelectedPoster : MonoBehaviour
     private bool movingToTarget = false;
     private int witchOne;
     public int sceneLoad;
+    public bool timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,27 +28,34 @@ public class SelectedPoster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(up))
-        {
-            movingToTarget = true;
-            witchOne = 0;
+        if(!timer)
+        { 
+            if (Input.GetKeyDown(up))
+            {
+                movingToTarget = true;
+                witchOne = 0;
+                StartCoroutine(inputcooldown());
+            }
+            if (Input.GetKeyDown(down))
+            {
+                movingToTarget = true;
+                witchOne = 1;
+                StartCoroutine(inputcooldown());
+            }
+            if (Input.GetKeyDown(back))
+            {
+                movingToTarget = true;
+                witchOne = 2;
+                StartCoroutine(inputcooldown());
+            }
+            if (Input.GetKeyDown(forword))
+            {
+                movingToTarget = true;
+                witchOne = 3;
+                StartCoroutine(inputcooldown());
+            }
         }
-        if (Input.GetKeyDown(down))
-        {
-            movingToTarget = true;
-            witchOne = 1;
-        }
-        if (Input.GetKeyDown(back))
-        {
-            movingToTarget = true;
-            witchOne = 2;
-        }
-        if (Input.GetKeyDown(forword))
-        {
-            movingToTarget = true;
-            witchOne = 3;
-        }
-        if(movingToTarget)
+        if (movingToTarget)
         {
             transform.position = Vector3.MoveTowards(transform.position, points[witchOne].position, 10 * Time.deltaTime);
         }
@@ -77,6 +85,12 @@ public class SelectedPoster : MonoBehaviour
         sceneLoad = collision.gameObject.GetComponent<Poster>().loadScene;
         movingToTarget = false;
         
+    }
+    public IEnumerator inputcooldown()
+    {
+        timer = true;
+        yield return new WaitForSeconds(1.4f);
+        timer = false;
     }
 
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BusMovement : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class BusMovement : MonoBehaviour
     private AudioSource audioSource;
     private bool iswalking = false;
     Animator animator;
+    public string Direction;
     void Start()
     {
         bus = GetComponent<Rigidbody2D>();
@@ -41,10 +43,17 @@ public class BusMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.A))
             {
                 bus.velocity += new Vector2(-Speed, 0);
+                Direction = "Walking-";
             }
             if (Input.GetKey(KeyCode.D))
             {
                 bus.velocity += new Vector2(Speed, 0);
+                Direction = "Walking";
+
+            }
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(5);
             }
 
             if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
@@ -62,7 +71,7 @@ public class BusMovement : MonoBehaviour
         if (bus.velocity.x != 0 || bus.velocity.y != 0)
         {
             iswalking = true;
-            animator.Play("Walking");
+            animator.Play(Direction);
         }
         if(bus.velocity.x == 0 && bus.velocity.y == 0)
         {

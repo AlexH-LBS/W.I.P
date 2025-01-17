@@ -18,7 +18,7 @@ public class Actor : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isPlayerNearby)
+        if (Input.GetKeyDown(KeyCode.E) && isPlayerNearby)
         {
             DialogueManager.Instance.StartDialogue(Name, Dialogue.RootNode, charaterImg);
             BusMovement.move = false;

@@ -6,8 +6,17 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public int loadScene;
+    public bool exit;
     public void LoadScene()
     {
-        SceneManager.LoadScene(loadScene);
+        if(exit)
+        {
+            Application.Quit();
+        }
+        if(!exit)
+        {
+            SceneManager.LoadScene(loadScene);
+
+        }
     }
 }
