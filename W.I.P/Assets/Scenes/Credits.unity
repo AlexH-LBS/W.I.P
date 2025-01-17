@@ -350,7 +350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: df3f033cad897ef4390696ae8b4d816c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 64f8074ea89c3e049b372f2efdc7f9f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -521,7 +521,7 @@ MonoBehaviour:
     Map writer, Latidue addict, Music\n\nM\xE4rta: Main mak maker, GFX imports, Music, 
     Latidue addict #1\n\nTheo: Main Programer, GFX imports, Monster addict #1\n\nHilda:
     Writer, SFX, Bug finder, Non engergy drink addict\n\n\n\nEstetare(Free Labour):\n\nEdward:
-    Estetare Leader, Backgrounds, Details, Ricky\n\nHanna: Backgrounds, HotSexyCowThey,
+    Estetare Leader, Backgrounds, Details, Ricky J\n\nHanna: Backgrounds, HotSexyCowThey,
     Overworked Free Child Labour\n\nMina: Sky, Posters"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f741165bd0066884683852270c06f261, type: 2}
@@ -761,7 +761,7 @@ Transform:
   m_GameObject: {fileID: 1838689832}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -540, z: 0}
+  m_LocalPosition: {x: -960, y: -1589, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

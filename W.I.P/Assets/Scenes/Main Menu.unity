@@ -587,6 +587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadScene: 0
+  exit: 1
 --- !u!4 &953937927
 Transform:
   m_ObjectHideFlags: 0
@@ -1314,7 +1315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c71d23119fec244992e2bbed0f290bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadScene: 0
+  loadScene: 4
+  exit: 0
 --- !u!4 &1537129963
 Transform:
   m_ObjectHideFlags: 0
@@ -1488,6 +1490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadScene: 0
+  exit: 0
 --- !u!4 &1956389380
 Transform:
   m_ObjectHideFlags: 0

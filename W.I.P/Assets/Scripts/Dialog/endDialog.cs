@@ -26,6 +26,10 @@ public class endDialog : MonoBehaviour
     {
         if(pop != 0 && prep != 0)
         {
+            if(pop < 20 && prep < 20)
+            {
+                offScreenDeathDialogue.SetActive(true);
+            }
             if(pop > prep)
             {
                 popdia.SetActive(true);
@@ -34,6 +38,11 @@ public class endDialog : MonoBehaviour
             if(prep > pop)
             {
                 prepdia.SetActive(true);
+                timer();
+            }
+            if(prep == pop)
+            {
+                polydia.SetActive(true);
                 timer();
             }
         }

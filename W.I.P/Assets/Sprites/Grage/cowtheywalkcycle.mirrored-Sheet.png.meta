@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 957534b62e7258847a85392e22d22c8b
+guid: 74c65f09ab7f74f4a8b1e489fcc512ff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bakgrund_2_0
+      name: cowtheywalkcycle.mirrored-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 77
-        height: 130
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,41 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbe26b7b8e5987d4cb0a89a0fa3375d9
-      internalID: -1657797656
+      spriteID: 00eafddffd6d36b4da07716385ee95f8
+      internalID: -1112885698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bakgrund_2_1
+      name: cowtheywalkcycle.mirrored-Sheet_1
       rect:
         serializedVersion: 2
-        x: 117
-        y: 60
-        width: 80
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b9c186c35b5d99448a766ff8577c8a7
-      internalID: 16911858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bakgrund_2_2
-      rect:
-        serializedVersion: 2
-        x: 135
+        x: 100
         y: 0
-        width: 230
-        height: 49
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3bc8d5519d53754e88ab9481425c26e
-      internalID: 1855796197
+      spriteID: 3ee08ba42e077ee49a1b053d5d2dee49
+      internalID: 1081319485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bakgrund_2_3
+      name: cowtheywalkcycle.mirrored-Sheet_2
       rect:
         serializedVersion: 2
-        x: 367
-        y: 2
-        width: 31
-        height: 36
+        x: 200
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5506afac198365a4ab09fa567a252762
-      internalID: 74202901
+      spriteID: 14be19a5c22945b408c4702fd9056d5c
+      internalID: -1228727660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bakgrund_2_4
+      name: cowtheywalkcycle.mirrored-Sheet_3
       rect:
         serializedVersion: 2
-        x: 393
-        y: 1
-        width: 6
-        height: 5
+        x: 300
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +174,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61dcc003d74715946912bc8579ea4653
-      internalID: 1694223818
+      spriteID: 395188833bbe4f346bf970ef50fd309d
+      internalID: 172059871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cowtheywalkcycle.mirrored-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb4fc566b0d5d34b82d7d7ff3e6c6ee
+      internalID: -205891069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cowtheywalkcycle.mirrored-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88aa0d552f8049b4397ecebdee112b97
+      internalID: 1399272355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cowtheywalkcycle.mirrored-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd28d16a36d020459f858f5845a3109
+      internalID: 1411053630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cowtheywalkcycle.mirrored-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a163e6c778ea3e74aa23b43affac2148
+      internalID: -2029875264
       vertices: []
       indices: 
       edges: []
@@ -212,11 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bakgrund_2_0: -1657797656
-      bakgrund_2_1: 16911858
-      bakgrund_2_2: 1855796197
-      bakgrund_2_3: 74202901
-      bakgrund_2_4: 1694223818
+      cowtheywalkcycle.mirrored-Sheet_0: -1112885698
+      cowtheywalkcycle.mirrored-Sheet_1: 1081319485
+      cowtheywalkcycle.mirrored-Sheet_2: -1228727660
+      cowtheywalkcycle.mirrored-Sheet_3: 172059871
+      cowtheywalkcycle.mirrored-Sheet_4: -205891069
+      cowtheywalkcycle.mirrored-Sheet_5: 1399272355
+      cowtheywalkcycle.mirrored-Sheet_6: 1411053630
+      cowtheywalkcycle.mirrored-Sheet_7: -2029875264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
