@@ -2591,7 +2591,6 @@ PrefabInstance:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
     - target: {fileID: 8214307541878122916, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: timer
       value: 45
@@ -2599,11 +2598,6 @@ PrefabInstance:
     - target: {fileID: 8231117563104027668, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: timer
       value: 45
-=======
-    - target: {fileID: 8219454964067703933, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 9.89
->>>>>>> Stashed changes
 =======
     - target: {fileID: 8219454964067703933, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: m_LocalPosition.z
