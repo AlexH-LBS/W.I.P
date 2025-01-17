@@ -10,9 +10,10 @@ public class Playmusc : MonoBehaviour
     public AudioSource Playing;
     public void Start()
     {
-        Playing.Pause();
+        
         myRigidbody = GetComponent<Rigidbody2D>();
         myRigidbody.velocity = new Vector2(0, -speed);
+        Playing.Pause();
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
