@@ -2574,6 +2574,7 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -2642,6 +2643,8 @@ PrefabInstance:
       value: 9.89
 >>>>>>> Stashed changes
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 4584880 (finished song)
 =======
 >>>>>>> parent of 4584880 (finished song)
     m_RemovedComponents:
