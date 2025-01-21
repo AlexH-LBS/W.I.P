@@ -835,7 +835,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 446336258347366099, guid: 129e812a9ae3a2644aae3f6ca4380b97, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5661199846930420598, guid: 129e812a9ae3a2644aae3f6ca4380b97, type: 3}
       propertyPath: speed
@@ -845,6 +845,10 @@ PrefabInstance:
       propertyPath: Playing
       value: 
       objectReference: {fileID: 964646254}
+    - target: {fileID: 5661199846930420598, guid: 129e812a9ae3a2644aae3f6ca4380b97, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6699756953858895724, guid: 129e812a9ae3a2644aae3f6ca4380b97, type: 3}
       propertyPath: m_Name
       value: music player
