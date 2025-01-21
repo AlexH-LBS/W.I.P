@@ -25,6 +25,16 @@ public class PlayerScript : MonoBehaviour
     //debug menu shit
     public Return Return;
     public Score Score;
+    //hit thingy idk
+    public GameObject hitAnim;
+    Animator hitAnims;
+
+    private void Start()
+    {
+        text.SetActive(false);
+        hitAnims = hitAnim.GetComponent<Animator>();
+    }
+
     void Update()
     {
         //if player hit while touching make it do some shit
@@ -100,6 +110,7 @@ public class PlayerScript : MonoBehaviour
         //score thingy
         if (interaction && !longBlock) {
             hit += 1;
+            
             print("YOU SCORE");
             //I added so that the hitmusic is mulitplied by 1%, probably doesnt work but you get roughly the point. is it possible to make the score and fame/hitmusic the same so we write less code and variables?
             Destroy(collision.gameObject);
@@ -114,6 +125,7 @@ public class PlayerScript : MonoBehaviour
         if (interaction && longBlockScore && longBlock){
             hit += 1;
             print("YOU SCORE LONG");
+            
             longBlockScore = false;
             HORDisplay(true);
         }
@@ -139,10 +151,6 @@ public class PlayerScript : MonoBehaviour
     public TextMeshProUGUI textDisplay;
     public GameObject text;
     public Color textColor;
-    private void Start()
-    {
-        text.SetActive(false);
-    }
     public void HORDisplay(bool hitOrMiss)
     {
         text.SetActive(true);
@@ -150,6 +158,7 @@ public class PlayerScript : MonoBehaviour
         if (hitOrMiss)
         {
             textDisplay.text = "HIT";
+            hitAnims.Play("PoP");
             Popularity.fame(2.5f, 0);
         }
         if (!hitOrMiss)
