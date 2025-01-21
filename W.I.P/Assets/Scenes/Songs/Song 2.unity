@@ -1839,6 +1839,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1453715395}
     - target: {fileID: 142082398210960271, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
+      propertyPath: input
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 142082398210960271, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: textColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -1895,6 +1899,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1453715395}
     - target: {fileID: 3327011985133868806, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
+      propertyPath: input
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327011985133868806, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: textColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -1918,6 +1926,10 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1453715395}
+    - target: {fileID: 3410239534898046953, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
+      propertyPath: input
+      value: 111
+      objectReference: {fileID: 0}
     - target: {fileID: 3410239534898046953, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: textColor.a
       value: 1
@@ -1974,6 +1986,10 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1453715395}
+    - target: {fileID: 4476281936177702973, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
+      propertyPath: input
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 4476281936177702973, guid: fd4319a1f6ca2444994068ba117950c9, type: 3}
       propertyPath: textColor.a
       value: 1
