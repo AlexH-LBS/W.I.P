@@ -31,7 +31,7 @@ public class PlayerScript : MonoBehaviour
 
     private void Start()
     {
-        text.SetActive(false);
+        hitMiss.SetActive(false);
         hitAnims = hitAnim.GetComponent<Animator>();
     }
 
@@ -146,24 +146,25 @@ public class PlayerScript : MonoBehaviour
     //HitOrMiss part of le scropt
     public void finish()
     {
+        print("added");
         Score.addints(hit);
     }
-    public TextMeshProUGUI textDisplay;
-    public GameObject text;
+    public TextMeshProUGUI hitOrMissDisplay;
+    public GameObject hitMiss;
     public Color textColor;
     public void HORDisplay(bool hitOrMiss)
     {
-        text.SetActive(true);
-        textDisplay.color = textColor;
+        hitMiss.SetActive(true);
+        hitOrMissDisplay.color = textColor;
         if (hitOrMiss)
         {
-            textDisplay.text = "HIT";
-            hitAnims.Play("PoP");
+            hitOrMissDisplay.text = "HIT";
+            hitAnims.Play("Pop");
             Popularity.fame(2.5f, 0);
         }
         if (!hitOrMiss)
         {
-            textDisplay.text = "MISS";
+            hitOrMissDisplay.text = "MISS";
             Popularity.fame(0, 5);
         }
         hitOrMiss = false;
@@ -173,6 +174,6 @@ public class PlayerScript : MonoBehaviour
     {
         
         yield return new WaitForSecondsRealtime(1f);
-        text.SetActive(false);
+        hitMiss.SetActive(false);
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2680985145265391139}
   - component: {fileID: 3445985245840185021}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Square3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 2264258727405556595}
   - component: {fileID: 6101137542068529573}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Square1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -489,9 +489,9 @@ MonoBehaviour:
   Return: {fileID: 0}
   Score: {fileID: 0}
   hitAnim: {fileID: 1980022601539887262}
-  textDisplay: {fileID: 0}
-  text: {fileID: 0}
-  textColor: {r: 0, g: 0, b: 0, a: 0}
+  hitOrMissDisplay: {fileID: 0}
+  hitMiss: {fileID: 0}
+  textColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!61 &5583723834950836600
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 2722702965282130997}
   - component: {fileID: 5472769182076183945}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Square2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -885,9 +885,9 @@ MonoBehaviour:
   Return: {fileID: 0}
   Score: {fileID: 0}
   hitAnim: {fileID: 3442565956922681280}
-  textDisplay: {fileID: 0}
-  text: {fileID: 0}
-  textColor: {r: 0, g: 0, b: 0, a: 0}
+  hitOrMissDisplay: {fileID: 0}
+  hitMiss: {fileID: 0}
+  textColor: {r: 1, g: 0.78431374, b: 0, a: 1}
 --- !u!61 &185491670994784491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1075,7 +1075,7 @@ GameObject:
   - component: {fileID: 5931716314988096577}
   - component: {fileID: 5872166146681206403}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Square4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1281,9 +1281,9 @@ MonoBehaviour:
   Return: {fileID: 0}
   Score: {fileID: 0}
   hitAnim: {fileID: 1631410191077477696}
-  textDisplay: {fileID: 0}
-  text: {fileID: 0}
-  textColor: {r: 0, g: 0, b: 0, a: 0}
+  hitOrMissDisplay: {fileID: 0}
+  hitMiss: {fileID: 0}
+  textColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!61 &1765996788325041402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1441,9 +1441,9 @@ MonoBehaviour:
   Return: {fileID: 0}
   Score: {fileID: 0}
   hitAnim: {fileID: 5586808273296649047}
-  textDisplay: {fileID: 0}
-  text: {fileID: 0}
-  textColor: {r: 0, g: 0, b: 0, a: 0}
+  hitOrMissDisplay: {fileID: 0}
+  hitMiss: {fileID: 0}
+  textColor: {r: 0, g: 0.78431374, b: 1, a: 1}
 --- !u!61 &7541796849279191100
 BoxCollider2D:
   m_ObjectHideFlags: 0
